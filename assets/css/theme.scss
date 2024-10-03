@@ -8,41 +8,39 @@
 
 //styling of header section
 
-.comp_logo{
+.comp_logo {
   height: calc(3rem + 1.5vw);
   fill: $color_white;
 }
 
-header{
+header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1;
 
-  .header_alert{
+  .header_alert {
     background-color: $color_white;
   }
 
   .alert-warning {
     justify-content: space-between;
     padding: 1rem 0;
-    
+
     .theme_btn {
       padding: 0.5rem;
       font-size: 1rem;
       border-radius: 2rem;
     }
   }
-  
-  .navbar{
-      .collapse{
-          justify-content: space-between;
-      }
+
+  .navbar {
+    .collapse {
+      justify-content: space-between;
+    }
   }
 }
-
-
 
 //styling of hero section
 
@@ -53,10 +51,185 @@ header{
     rgba(0, 68, 101, 1) 0%,
     rgba(0, 68, 101, 1) 100%
   );
-
 }
 
-.hero_inner{
- padding-bottom: 50vh;  
- margin-top: 15REM; 
+
+.hero_list {
+  gap: 1.2rem;
+}
+
+.hero_list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color_white;
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(2.3rem + 0.5vw);
+    height: calc(2.3rem + 0.5vw);
+    margin-right: 1rem;
+    color: $color_black;
+    background-color: white;
+    border-radius: 50%;
+    font-size: calc(1rem + 0.5vw);
+    box-shadow: 6px 6px 1px black;
+    transition: all 0.3s linear;
+
+    &:hover {
+      transform: translate(4px, 4px);
+      box-shadow: 0 0 0 transparent;
+    }
+  }
+  h4 {
+    font-size: calc(1.2rem + .25vw);
+    small {
+      font-size: 70%;
+      display: block;
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+.hero{
+  picture{
+    display: block;
+    aspect-ratio: 4/3.5;
+    position: relative;
+
+    .hero_img{
+      position: absolute;
+      &::before {
+        content: attr(data-content); 
+        position: absolute;
+        bottom: -4rem;
+        left: 0;
+        color: $black;
+        font-size: 1.2rem;
+        white-space: nowrap;
+        background-color: $color_white;
+        padding: .5rem 1rem;
+        border: .25rem solid $color_black;
+        border-radius: 2.5rem;
+        z-index: 2;
+        animation: moveY 10s infinite;
+      }
+    }
+
+    @keyframes moveY {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(10%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .svgA{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 2rem;
+      height: 2rem;
+      fill: $color_white;
+    }
+
+    .svgB{
+      position: absolute;
+      width: 3rem;
+      height: 3rem;
+      top: 0;
+      right: 0;
+      
+    }
+
+    .imgA{
+      position: absolute;
+      top: 20%;
+      left: 10%;
+      img{
+        width: 6rem;
+        height: 6rem;
+        object-fit: cover;
+      }
+    } 
+
+    .imgB{
+      position: absolute;
+      bottom: 3rem;
+      right: 3rem;
+      img{
+        width: 9rem;
+        height: 9rem;
+        object-fit: cover;
+      }
+    } 
+
+    .imgC{
+      position: absolute;
+      
+      top: 15%;
+      right: 30%;
+      img{
+        width: 7rem;
+        height: 7rem;
+        object-fit: cover;
+        
+      }
+    } 
+
+    .imgD{
+      position: absolute;
+      top: 55%;
+      right: 40%;
+      img{
+        width: 7rem;
+        height: 7rem;
+        object-fit: cover;
+      }
+    } 
+
+  }
+
+  .btn_wrapper{
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+}
+
+
+@media(max-width: 786px){
+  .d_lg-n{
+    display: none!important;
+  }
+
+  //styling of header section
+  .alert-warning{
+    padding: 1rem!important;
+    gap: 1.5rem;
+  }
+
+  
+
+  //styling of hero section
+  .hero_list{
+    gap: 0;
+    justify-content: center;
+    .hero_list-item{
+      width: 50%;
+      padding: .75rem 0;
+    }
+  }
+}
+
+
+@media(max-width: 576px){
+  .d_sm-n{
+    display: none;
+  }
 }
