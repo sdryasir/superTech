@@ -1,0 +1,62 @@
+@import "../vendors/bs5/bootstrap";
+@import "../vendors/swiper";
+@import "../vendors/aos";
+@import "../css/partials/base";
+@import "../css/partials/fonts";
+// media queries
+@import "../css/partials/mediaqueries";
+
+//styling of header section
+
+.comp_logo{
+  height: calc(3rem + 1.5vw);
+  fill: $color_white;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
+  .header_alert{
+    background-color: $color_white;
+  }
+
+  .alert-warning {
+    justify-content: space-between;
+    padding: 1rem 0;
+    
+    .theme_btn {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border-radius: 2rem;
+    }
+  }
+  
+  .navbar{
+      .collapse{
+          justify-content: space-between;
+      }
+  }
+}
+
+
+
+//styling of hero section
+
+.hero {
+  background: rgb(0, 68, 101);
+  background: linear-gradient(
+    163deg,
+    rgba(0, 68, 101, 1) 0%,
+    rgba(0, 68, 101, 1) 100%
+  );
+
+}
+
+.hero_inner{
+ padding-bottom: 50vh;  
+ margin-top: 15REM; 
+}
