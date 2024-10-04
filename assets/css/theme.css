@@ -5873,6 +5873,14 @@ header .header_alert {
   background-color: #ffffff;
 }
 
+header .header_alert h6 {
+  margin-right: 1rem;
+}
+
+header .header_alert button:first-of-type {
+  margin-right: auto;
+}
+
 header .alert-warning {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;

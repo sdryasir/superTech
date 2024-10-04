@@ -22,6 +22,12 @@ header {
 
   .header_alert {
     background-color: $color_white;
+    h6{
+      margin-right: 1rem;
+    }
+    button:first-of-type{
+      margin-right: auto;
+    }
   }
 
   .alert-warning {
