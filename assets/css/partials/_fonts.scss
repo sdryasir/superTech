@@ -1,1 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?brpepw');
+    src:  url('fonts/icomoon.eot?brpepw#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?brpepw') format('truetype'),
+      url('fonts/icomoon.woff?brpepw') format('woff'),
+      url('fonts/icomoon.svg?brpepw#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-tick:before {
+    content: "\e90e";
+  }
+  .icon-alert:before {
+    content: "\e900";
+  }
+  .icon-cross:before {
+    content: "\e901";
+  }
+  .icon-dollar-search:before {
+    content: "\e902";
+  }
+  .icon-facebook:before {
+    content: "\e903";
+  }
+  .icon-file:before {
+    content: "\e904";
+  }
+  .icon-fire:before {
+    content: "\e905";
+  }
+  .icon-hand-shake:before {
+    content: "\e906";
+  }
+  .icon-heart:before {
+    content: "\e907";
+  }
+  .icon-location:before {
+    content: "\e908";
+  }
+  .icon-person-search:before {
+    content: "\e909";
+  }
+  .icon-play:before {
+    content: "\e90a";
+  }
+  .icon-search:before {
+    content: "\e90b";
+  }
+  .icon-tick-circle:before {
+    content: "\e90c";
+  }
+  .icon-upload:before {
+    content: "\e90d";
+  }
+  
