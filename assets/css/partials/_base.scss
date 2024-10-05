@@ -268,6 +268,32 @@ ul {
   // padding: 0 12px;
 }
 
+.media_list{
+  gap: 1rem;
+  margin-bottom: 1rem;
+  .media_list-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    color: $black;
+    border: 1px solid $color_black;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all .3s linear;
+    &:hover{
+      background-color: $color_white;
+      border: 0;
+      color: $color_black;
+
+    }
+  }
+}
+
 @media (max-width: 992px) {
 
   .w_50 {
@@ -287,4 +313,14 @@ ul {
     display: none!important;
   }
 
+  
+
 }
+
+@media (max-width: 578px){
+  .footer_inner aside .footer_list{
+    width: 100%;
+  }
+}
+
+

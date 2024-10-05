@@ -5,6 +5,9 @@ footer{
         height: calc(4rem + 1vw);
         margin-bottom: 2rem;
     }
+    .footer_heading{
+        margin-bottom: 1rem;
+    }
 }
 .footer_inner{
     article{
@@ -38,4 +41,19 @@ footer{
     }
 
     
+}
+
+@media(max-width: 992px){
+    .footer_inner{
+        
+        aside{
+            width: 100%;
+            
+            .footer_list{
+                margin: 1rem 0;
+                width: 100%;
+              }
+            
+        }
+    }
 }
