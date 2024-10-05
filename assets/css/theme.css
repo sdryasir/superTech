@@ -6345,6 +6345,10 @@ header .navbar .collapse {
   .header_alert h6 {
     margin-right: 1rem;
   }
+  .header_alert .btn_yellow {
+    background-color: transparent !important;
+    color: #433b89;
+  }
   .header_alert .alert_btn-wrapper {
     width: -webkit-fit-content;
     width: -moz-fit-content;
