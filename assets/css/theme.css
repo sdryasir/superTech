@@ -5636,6 +5636,7 @@ ul {
 .footer_list .footer_item {
   display: inline-block;
   text-decoration: none;
+  color: inherit;
   font-weight: 400;
   padding: 0.25rem 0.5rem;
   text-transform: capitalize;

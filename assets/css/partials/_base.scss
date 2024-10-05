@@ -190,7 +190,7 @@ ul {
   .footer_item {
     display: inline-block;
     text-decoration: none;
-    // color: $color_white;
+    color: inherit;
     font-weight: 400;
     padding: 0.25rem 0.5rem;
     text-transform: capitalize;
