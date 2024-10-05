@@ -933,6 +933,33 @@ header {
     right: 50%;
     transform: translateX(-50%);
   }
+
+  //styling of .services section
+
+  .services{
+    .nav-tabs {
+      width: 100%;
+
+      .nav-item{
+        button{
+          margin-bottom: 0!important;
+        }
+      }
+
+    }
+
+    .scroll-right,.scroll-left{
+      // border-radius: 50%!important;
+      padding: 1.45rem;
+      top: 50%;
+      transform: translateY(-54%);
+    }
+
+    .tab-content{
+      margin-top: 2rem;
+    }
+  }
+  
 }
 
 @media (max-width: 576px) {
@@ -954,9 +981,8 @@ header {
   //styling of services section
 
   .services {
-    .nav-tabs {
-      width: 100%;
-    }
+    
+    
     .no_section{
       &:after{
         right: 50%;

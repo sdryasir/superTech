@@ -6984,6 +6984,21 @@ header .navbar .collapse {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
+  .services .nav-tabs {
+    width: 100%;
+  }
+  .services .nav-tabs .nav-item button {
+    margin-bottom: 0 !important;
+  }
+  .services .scroll-right, .services .scroll-left {
+    padding: 1.45rem;
+    top: 50%;
+    -webkit-transform: translateY(-54%);
+            transform: translateY(-54%);
+  }
+  .services .tab-content {
+    margin-top: 2rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -6995,9 +7010,6 @@ header .navbar .collapse {
   }
   .info_sec article {
     padding: 0;
-  }
-  .services .nav-tabs {
-    width: 100%;
   }
   .services .no_section:after {
     right: 50%;
