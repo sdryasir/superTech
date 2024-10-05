@@ -6487,6 +6487,10 @@ header .navbar .collapse {
   /* For larger screens */
 }
 
+.services .sect_heading {
+  padding-left: 1rem;
+}
+
 .services .sect_heading small {
   margin-top: 1rem;
   font-size: 50%;
