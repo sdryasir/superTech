@@ -181,6 +181,7 @@ ul {
   // padding: 1rem .5rem;
 
   li:first-child {
+    margin-bottom: 1rem;
     .footer_item {
       font-weight: 800;
     }
@@ -189,9 +190,10 @@ ul {
   .footer_item {
     display: inline-block;
     text-decoration: none;
-    color: inherit;
+    // color: $color_white;
     font-weight: 400;
     padding: 0.25rem 0.5rem;
+    text-transform: capitalize;
   }
 }
 
@@ -275,6 +277,8 @@ ul {
   .d_lg-n{
     display: none;
   }
+
+  
 }
 
 

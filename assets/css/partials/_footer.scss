@@ -1,5 +1,41 @@
+footer{
+    background-color: #8ADBE6;
+
+    .footer_logo{
+        height: calc(4rem + 1vw);
+        margin-bottom: 2rem;
+    }
+}
+.footer_inner{
+    article{
+        width: 25%;
+    }
+
+    aside{
+        width: 75%;
+
+        .footer_list{
+            width: 33.333333%;
+          }
+    }
+}
 
 
-aside{
+@media(max-width: 992px){
+    .footer_inner{
+        article{
+            width: 100%;
+        }
+    
+        aside{
+            width: 100%;
+            
+            .footer_list{
+                width: 50%;
+              }
+            
+        }
+    }
+
     
 }
