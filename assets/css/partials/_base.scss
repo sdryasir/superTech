@@ -171,6 +171,14 @@ ul {
   font-size: calc(1rem + .5vw);
 }
 
+
+
+.heading_sm{
+  font-size: calc(.8rem + .2vw);
+  color: $color_theme;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
 // .sect_heading {
 //     font-size: calc(2rem + .5vw);
 //     font-weight: 600;
@@ -292,6 +300,10 @@ ul {
 
     }
   }
+}
+
+.bg_blue{
+  background-color: lighten($color: $color_theme, $amount: 30%);
 }
 
 @media (max-width: 992px) {

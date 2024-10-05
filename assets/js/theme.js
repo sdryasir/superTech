@@ -81,7 +81,7 @@ window.addEventListener("scroll", () => {
 //   },
 // });
 
-var swiper = new Swiper(".mySwiper2", {
+var swiper2 = new Swiper(".mySwiper2", {
   loop: true, // Corrected 'true' without quotes
   spaceBetween: 24,
   autoplay: {
@@ -108,27 +108,48 @@ var swiper = new Swiper(".mySwiper2", {
   },
 });
 
-//styling of responsive navs and tabs
 
-// const scrollLeftButton = document.querySelector(".scroll-left");
-// const scrollRightButton = document.querySelector(".scroll-right");
-// const tabList = document.querySelector(".scrollable-tabs");
+//styling of reviews section swiper
 
-// // Scroll left when clicking the left button
-// scrollLeftButton.addEventListener("click", () => {
-//   tabList.scrollBy({
-//     left: -100, // Adjust this value for scroll speed
-//     behavior: "smooth",
-//   });
-// });
+const mySwiper3 = new Swiper(".mySwiper3", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+    
+  },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  // },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
+});
 
-// // Scroll right when clicking the right button
-// scrollRightButton.addEventListener("click", () => {
-//   tabList.scrollBy({
-//     left: 100, // Adjust this value for scroll speed
-//     behavior: "smooth",
-//   });
-// });
+var swiperCompanies = new Swiper(".mySwiper4", {
+  loop: true, // Enables loop for continuous sliding
+  autoplay: {
+    delay: 0, // Continuous sliding without delay
+    disableOnInteraction: false, // Autoplay won't stop on user interaction
+  },
+  speed: 1000, // Adjust speed for smooth continuous effect
+  slidesPerView: 3, // Default number of slides (for screens greater than 0px)
+  spaceBetween: 30, // Space between slides
+  centeredSlides: true, // Optional: centers the active slide
+  breakpoints: {
+    576: {
+      slidesPerView: 5, // Shows 5 slides for screens greater than 576px
+    },
+    992: {
+      slidesPerView: 6, // Shows 7 slides for screens greater than 992px
+    },
+  }
+});
+
 
 
 
