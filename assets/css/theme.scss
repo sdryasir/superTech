@@ -34,14 +34,32 @@ header {
     h6 {
       margin-right: 1rem;
     }
+    .d_flex-center{
+      justify-content: center;
+    }
 
+    
 
     .alert_btn-wrapper {
-      flex: 1;
+
+      width: fit-content;
+      background-color: $color_white;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      height: 100%;
+      
+      
+      // flex: 1;
+      // width: fit-content;
       display: flex;
-      justify-content: space-between;
+      // justify-content: space-between;
       align-items: center;
       padding-right: 1rem;
+      .btn_yellow{
+        display: none;
+      }
     }
   }
 
@@ -83,6 +101,8 @@ header {
     rgba(0, 68, 101, 1) 100%
   );
 }
+
+
 
 .hero_list {
   gap: 1.2rem;
@@ -434,28 +454,34 @@ header {
 @media (max-width: 992px) {
   //styling of hero section
 
-  .header_alert {
+  // .header_alert .alert_btn-wrapper .btn_yellow{
+  //   display: block;
+  // }
+
+  header .header_alert {
     background-color: $color_white;
     h6 {
       margin-right: 1rem;
+      .btn_yellow{
+        display: none!important;
+      }
     }
 
     .btn_yellow{
+      display: block!important;
+      margin-right: 0;
+      font-weight: bold;
       background-color: transparent!important;
       color: $color_theme;
     }
 
-
-    .alert_btn-wrapper {
-      // flex: 1;
-      width: fit-content;
-      background-color: $color_white;
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      height: 100%;
+    .header_close{
+      background-color: transparent;
+      border: 0;
     }
+
+
+    
   }
 
   
