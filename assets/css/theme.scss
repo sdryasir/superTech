@@ -957,5 +957,33 @@ header {
     .nav-tabs {
       width: 100%;
     }
+    .no_section{
+      &:after{
+        right: 50%;
+        bottom: 1rem;
+        transform: translate(50%, 50%);
+        // border-top-right-radius: 0;
+        // border-bottom-right-radius: 0;
+        white-space: nowrap;
+        background-color: transparent;
+      }
+
+      .no_section strong {
+        font-size: calc(1rem + 0.25vw);
+      }
+
+      li{
+        text-align: center;
+      }
+
+      
+    }
+    .companies_slider {
+      margin: 2rem;
+    }
+  }
+
+  .services .col_right .profectionals_sect .profectionals_card{
+    width: 100%;
   }
 }

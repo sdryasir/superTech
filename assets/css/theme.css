@@ -6999,5 +6999,25 @@ header .navbar .collapse {
   .services .nav-tabs {
     width: 100%;
   }
+  .services .no_section:after {
+    right: 50%;
+    bottom: 1rem;
+    -webkit-transform: translate(50%, 50%);
+            transform: translate(50%, 50%);
+    white-space: nowrap;
+    background-color: transparent;
+  }
+  .services .no_section .no_section strong {
+    font-size: calc(1rem + 0.25vw);
+  }
+  .services .no_section li {
+    text-align: center;
+  }
+  .services .companies_slider {
+    margin: 2rem;
+  }
+  .services .col_right .profectionals_sect .profectionals_card {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=theme.css.map */
