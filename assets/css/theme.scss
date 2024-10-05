@@ -984,20 +984,28 @@ header {
     
     
     .no_section{
+      width: 100%!important;
       &:after{
         right: 50%;
         bottom: 1rem;
         transform: translate(50%, 50%);
-        // border-top-right-radius: 0;
-        // border-bottom-right-radius: 0;
+
         white-space: nowrap;
         background-color: transparent;
       }
 
-      .no_section strong {
-        font-size: calc(1rem + 0.25vw);
-      }
+      P{
+        font-size: calc(0.6rem + 0.25vw);
+        strong {
+          font-size: calc(1rem + 0.25vw)!important;
+        }
+      } 
 
+      ul{
+        justify-content: space-between;
+        
+        gap: 0;
+      }
       li{
         text-align: center;
       }

@@ -7011,6 +7011,9 @@ header .navbar .collapse {
   .info_sec article {
     padding: 0;
   }
+  .services .no_section {
+    width: 100% !important;
+  }
   .services .no_section:after {
     right: 50%;
     bottom: 1rem;
@@ -7019,8 +7022,17 @@ header .navbar .collapse {
     white-space: nowrap;
     background-color: transparent;
   }
-  .services .no_section .no_section strong {
-    font-size: calc(1rem + 0.25vw);
+  .services .no_section P {
+    font-size: calc(0.6rem + 0.25vw);
+  }
+  .services .no_section P strong {
+    font-size: calc(1rem + 0.25vw) !important;
+  }
+  .services .no_section ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 0;
   }
   .services .no_section li {
     text-align: center;
