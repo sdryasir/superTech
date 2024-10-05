@@ -3,6 +3,8 @@
 @import "../vendors/aos";
 @import "../css/partials/base";
 @import "../css/partials/fonts";
+@import "../css/partials/footer";
+
 // media queries
 @import "../css/partials/mediaqueries";
 
@@ -12,7 +14,14 @@
   height: calc(3rem + 1.5vw);
   fill: $color_white;
 }
-
+.apply_btn{
+  font-size: calc(.8rem + .2vw);
+  padding: .25rem .5rem;
+  border-radius: 1rem;
+  border: 0;
+  margin-right: 1rem;
+  text-transform: capitalize;
+}
 header {
   position: fixed;
   top: 0;
@@ -22,11 +31,17 @@ header {
 
   .header_alert {
     background-color: $color_white;
-    h6{
+    h6 {
       margin-right: 1rem;
     }
-    button:first-of-type{
-      margin-right: auto;
+
+
+    .alert_btn-wrapper {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 1rem;
     }
   }
 
@@ -312,9 +327,8 @@ header {
 //styling of services
 
 .services {
-
-  .sect_heading{
-    small{
+  .sect_heading {
+    small {
       margin-top: 1rem;
       font-size: 50%;
     }
@@ -324,21 +338,19 @@ header {
     border-color: transparent;
     gap: 1rem;
     .nav-link {
-      padding: .5rem 1.5rem;
+      padding: 0.5rem 1.5rem;
       border: 2px solid $color_black;
       transition: all 0.3s linear;
       // border-right: 4px solid transparent;
       // border-bottom: 5px solid transparent;
-      border-radius: .75rem;
+      border-radius: 0.75rem;
       margin-bottom: 2rem;
-
 
       &:hover {
         background-color: $color_theme;
         color: $color_white;
         border-top-color: transparent;
         border-right-color: transparent;
-
       }
     }
     .nav-link:hover {
@@ -349,16 +361,14 @@ header {
       background-color: $color_theme;
       color: $color_white;
       border-radius: 0.5rem;
-      &:hover{
+      &:hover {
         border-right-color: $color_black;
         border-bottom-color: $color_black;
       }
     }
-
-    
   }
 
-  .tab-content{
+  .tab-content {
     border: 2px solid $color_black;
     padding: 1rem 2rem;
     border-radius: 1rem;
@@ -422,6 +432,51 @@ header {
 }
 
 @media (max-width: 992px) {
+  //styling of hero section
+
+  .header_alert {
+    background-color: $color_white;
+    h6 {
+      margin-right: 1rem;
+    }
+
+
+    .alert_btn-wrapper {
+      // flex: 1;
+      width: fit-content;
+      background-color: $color_white;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      height: 100%;
+    }
+  }
+
+  
+  .marquee-text {
+    white-space: normal; 
+    overflow: hidden; 
+  }
+
+ 
+
+  .marquee-text {
+    white-space: nowrap; 
+    overflow: hidden; 
+    display: block;
+    animation: marquee 10s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%); /* Start off the screen to the right */
+    }
+    100% {
+      transform: translateX(-100%); /* End off the screen to the left */
+    }
+  }
+
   .info_inner {
     padding: 1rem;
     article {
@@ -451,6 +506,15 @@ header {
   .alert-warning {
     padding: 1rem !important;
     gap: 1.5rem;
+  }
+
+  .alert_btn-wrapper {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: fit-content;
+    background-color: $color_white;
+    transform: translateY(-50%);
   }
 
   //styling of hero section
@@ -489,31 +553,6 @@ header {
     display: none;
   }
 
-  /* Default styling for larger screens */
-  .marquee-text {
-    white-space: normal; /* Regular text wrapping */
-    overflow: hidden; /* No scrolling on larger screens */
-  }
-
-  /* Apply marquee effect for screen sizes 576px or below */
-  @media (max-width: 576px) {
-    .marquee-text {
-      white-space: nowrap; /* Prevent text from wrapping */
-      overflow: hidden; /* Ensure content remains in a single line */
-      display: block;
-      animation: marquee 10s linear infinite;
-    }
-
-    @keyframes marquee {
-      0% {
-        transform: translateX(100%); /* Start off the screen to the right */
-      }
-      100% {
-        transform: translateX(-100%); /* End off the screen to the left */
-      }
-    }
-  }
-
   //styling of hero section
 
   .info_sec {
@@ -524,8 +563,8 @@ header {
 
   //styling of services section
 
-  .services{
-    .nav-tabs{
+  .services {
+    .nav-tabs {
       width: 100%;
     }
   }

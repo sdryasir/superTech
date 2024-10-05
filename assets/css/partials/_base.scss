@@ -15,6 +15,7 @@ $radious-g: calc(0.25rem + 0.2vw);
 $container-width: 1800px;
 $container-sm: 1240px;
 
+
 body {
   overflow: hidden;
   overflow-y: auto;
@@ -269,6 +270,10 @@ ul {
 
   .w_50 {
     width: 100%;
+  }
+
+  .d_lg-n{
+    display: none;
   }
 }
 
