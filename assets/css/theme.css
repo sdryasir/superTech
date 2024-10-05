@@ -6271,6 +6271,20 @@ header .navbar .collapse {
   margin-top: 3rem;
 }
 
+.info_sec {
+  background-color: #8ADBE6;
+}
+
+.info_sec .info_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .info_inner article {
   width: 25%;
   padding: 2rem 0;
