@@ -102,7 +102,7 @@ header {
 }
 
 .hero_list {
-  gap: 1.2rem;
+  gap: 1rem;
 }
 
 .hero_list-item {
@@ -548,6 +548,28 @@ header {
   }
 }
 
+@media (max-width: 1200px){
+  .hero{
+    .hero_inner{
+      figcaption{
+        width: 100%;
+        text-align: center;
+        .hero_list{
+          justify-content: center;
+        }
+        .btn_wrapper{
+          justify-content: center;
+        }
+      }
+
+      picture{
+        display: none;
+        
+      }
+    }
+  }
+}
+
 @media (max-width: 992px) {
   //styling of hero section
 
@@ -662,6 +684,7 @@ header {
   .hero_list {
     gap: 1rem;
     justify-content: center;
+    flex-wrap: nowrap;
     .hero_list-item {
       flex-direction: column;
       align-items: center;
@@ -672,6 +695,7 @@ header {
 
       small {
         white-space: nowrap;
+        font-size: 60%;
       }
     }
   }

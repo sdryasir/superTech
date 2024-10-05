@@ -5960,7 +5960,7 @@ header .navbar .collapse {
 }
 
 .hero_list {
-  gap: 1.2rem;
+  gap: 1rem;
 }
 
 .hero_list-item {
@@ -6482,6 +6482,26 @@ header .navbar .collapse {
   }
 }
 
+@media (max-width: 1200px) {
+  .hero .hero_inner figcaption {
+    width: 100%;
+    text-align: center;
+  }
+  .hero .hero_inner figcaption .hero_list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero .hero_inner figcaption .btn_wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero .hero_inner picture {
+    display: none;
+  }
+}
+
 @media (max-width: 992px) {
   header .header_alert {
     background-color: #ffffff;
@@ -6604,6 +6624,8 @@ header .navbar .collapse {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .hero_list .hero_list-item {
     -webkit-box-orient: vertical;
@@ -6621,6 +6643,7 @@ header .navbar .collapse {
   }
   .hero_list .hero_list-item small {
     white-space: nowrap;
+    font-size: 60%;
   }
   .info_articl-btn {
     right: 50%;
