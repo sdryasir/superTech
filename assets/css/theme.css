@@ -5865,8 +5865,8 @@ ul {
 }
 
 .apply_btn {
-  font-size: calc(.8rem + .2vw);
-  padding: .25rem .5rem;
+  font-size: calc(0.8rem + 0.2vw);
+  padding: 0.25rem 0.5rem;
   border-radius: 1rem;
   border: 0;
   margin-right: 1rem;
@@ -5948,9 +5948,15 @@ header .navbar .collapse {
           justify-content: space-between;
 }
 
-.hero {
-  background: #004465;
-  background: linear-gradient(163deg, #004465 0%, #004465 100%);
+.hero .hero_bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
 }
 
 .hero_list {
@@ -6012,12 +6018,24 @@ header .navbar .collapse {
 
 .hero picture {
   display: block;
-  aspect-ratio: 4/3.5;
+  aspect-ratio: 4/2.5;
   position: relative;
 }
 
 .hero picture .hero_img {
   position: absolute;
+}
+
+.hero picture .hero_img::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
 }
 
 .hero picture .hero_img::before {
@@ -6026,13 +6044,20 @@ header .navbar .collapse {
   bottom: -4rem;
   left: 0;
   color: #000;
-  font-size: 1.2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1rem;
   white-space: nowrap;
   background-color: #ffffff;
   padding: 0.5rem 1rem;
-  border: 0.25rem solid #2a2a2a;
+  border: 2px solid #2a2a2a;
+  text-transform: capitalize;
   border-radius: 2.5rem;
   z-index: 2;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   -webkit-animation: moveY 10s infinite;
           animation: moveY 10s infinite;
 }
@@ -6086,54 +6111,159 @@ header .navbar .collapse {
 
 .hero picture .imgA {
   position: absolute;
-  top: 20%;
-  left: 10%;
+  top: 2.5rem;
+  left: 9rem;
 }
 
 .hero picture .imgA img {
+  width: 7.5rem;
+  height: 7.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero picture .imgA::before {
+  display: none;
+}
+
+.hero picture .imgB {
+  position: absolute;
+  top: 0;
+  left: 18.5rem;
+}
+
+.hero picture .imgB img {
   width: 6rem;
   height: 6rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.hero picture .imgB {
-  position: absolute;
-  bottom: 3rem;
-  right: 3rem;
-}
-
-.hero picture .imgB img {
-  width: 9rem;
-  height: 9rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+.hero picture .imgB::before {
+  display: none;
 }
 
 .hero picture .imgC {
   position: absolute;
-  top: 15%;
-  right: 30%;
+  top: 2rem;
+  right: 5rem;
 }
 
 .hero picture .imgC img {
-  width: 7rem;
-  height: 7rem;
+  width: 5rem;
+  height: 5rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.hero picture .imgC::before {
+  display: none;
 }
 
 .hero picture .imgD {
   position: absolute;
-  top: 55%;
-  right: 40%;
+  top: 14rem;
+  left: 10rem;
 }
 
 .hero picture .imgD img {
-  width: 7rem;
-  height: 7rem;
+  width: 4.5rem;
+  height: 4.5rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.hero picture .imgD::before {
+  left: -6rem;
+  top: -2.5rem;
+}
+
+.hero picture .imgE {
+  position: absolute;
+  top: 10rem;
+  left: 16rem;
+}
+
+.hero picture .imgE img {
+  width: 6.5rem;
+  height: 6.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero picture .imgE::before {
+  display: none;
+}
+
+.hero picture .imgF {
+  position: absolute;
+  top: 9rem;
+  left: 24rem;
+}
+
+.hero picture .imgF img {
+  width: 6rem;
+  height: 6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero picture .imgF::before {
+  left: 8rem;
+  top: 1.5rem;
+}
+
+.hero picture .imgG {
+  position: absolute;
+  top: 20rem;
+  left: 13rem;
+}
+
+.hero picture .imgG img {
+  width: 5rem;
+  height: 5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero picture .imgG::before {
+  top: 0;
+  left: -7rem;
+}
+
+.hero picture .imgI {
+  position: absolute;
+  top: 15rem;
+  left: 30rem;
+}
+
+.hero picture .imgI img {
+  width: 5rem;
+  height: 5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero picture .imgI::before {
+  display: none;
+}
+
+.hero picture .imgH {
+  position: absolute;
+  top: 17.5rem;
+  left: 20rem;
+}
+
+.hero picture .imgH img {
+  width: 8rem;
+  height: 8rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero picture .imgH::before {
+  top: 6rem;
+  left: 9rem;
 }
 
 .hero .btn_wrapper {
@@ -6445,23 +6575,52 @@ header .navbar .collapse {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
+  .hero {
+    text-align: center;
+  }
+  .hero .hero_inner .sect_heading {
+    max-width: 30rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .hero .hero_inner .sect_heading small {
+    margin-top: 1rem;
+  }
   .hero .btn_wrapper {
     margin-top: 1.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 1rem;
   }
   .hero .btn_wrapper .theme_btn {
     width: 100%;
+    max-width: 15rem;
     text-align: center;
   }
   .hero_list {
-    gap: 0;
+    gap: 1rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   .hero_list .hero_list-item {
-    width: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     padding: 0.75rem 0;
+    gap: 1rem;
+  }
+  .hero_list .hero_list-item small {
+    white-space: nowrap;
   }
   .info_articl-btn {
     right: 50%;
