@@ -22,6 +22,7 @@ body {
   font-family: $font-one;
 }
 
+
 .container_partial {
   // max-width: calc($container-width + (50% - $container-width / 2));
   max-width: calc(#{$container-sm} + (50% - #{$container-sm / 2}));
@@ -104,6 +105,12 @@ ul {
   list-style: none;
 }
 
+//classes for padding
+
+.px-12{
+  padding: 0 12px!important ;
+}
+
 .navbar-toggler:focus {
   text-decoration: none;
   outline: 0;
@@ -169,11 +176,12 @@ ul {
 
 .heading_sm{
   font-size: calc(1rem + .5vw);
+  
 }
 
 
 
-.heading_sm{
+.heading_sm-a{
   font-size: calc(.8rem + .2vw);
   color: $color_theme;
   text-transform: capitalize;
@@ -245,9 +253,12 @@ ul {
 }
 
 .sec_space {
-  padding: 6rem 0;
+  padding: 3rem 0;
 }
 
+.sec_space-lg{
+  padding: 6rem 0;
+}
 .frosten_bg {
   background-color: rgba($color: $color_black, $alpha: 0.7);
   backdrop-filter: blur(25px);

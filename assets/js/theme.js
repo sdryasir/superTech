@@ -26,62 +26,15 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// let navToggler = document.querySelector("#navToggler");
-// let siteWrapper = document.querySelector("#siteWrapper");
 
-// navToggler.addEventListener('click', function(){
-//     siteWrapper.classList.toggle("scrollNone")
-// })
+const swiper1 = new Swiper(".mySwiper1", {
+  navigation: {
+    nextEl: ".swiper-button-next-1",
+    prevEl: ".swiper-button-prev-1",
+  },
+});
 
-// const navToggler = document.getElementById('navToggler');
-//     const navbarCollapse = document.getElementById('navbarSupportedContent');
-
-//     navToggler.addEventListener('click', function () {
-//         if (navbarCollapse.classList.contains('show')) {
-//             document.body.style.overflow = '';
-//         } else {
-//             document.body.style.overflow = 'hidden';
-//         }
-//     });
-
-//     navbarCollapse.addEventListener('hidden.bs.collapse', function () {
-//         document.body.style.overflow = '';
-//     });
-
-//     navbarCollapse.addEventListener('shown.bs.collapse', function () {
-//         document.body.style.overflow = 'hidden';
-//     });
-
-// code for info_section swiper
-
-// var swiper = new Swiper(".mySwiper2", {
-//   loop: 'true',
-//   spaceBetween: 24,
-//   autoplay: {
-//     delay: 1500, // Adjust delay (in milliseconds) for autoplay
-//     disableOnInteraction: false, // Keeps autoplay active after user interaction
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   breakpoints: {
-//     // when window width is >= 992px
-//     992: {
-//       slidesPerView: 2.9,
-//     },
-//     // when window width is between 786px and 992px
-//     786: {
-//       slidesPerView: 2,
-//     },
-//     // when window width is < 786px
-//     576: {
-//       slidesPerView: 1,
-//     },
-//   },
-// });
-
-var swiper2 = new Swiper(".mySwiper2", {
+const swiper2 = new Swiper(".mySwiper2", {
   loop: true, // Corrected 'true' without quotes
   spaceBetween: 24,
   autoplay: {
@@ -89,13 +42,19 @@ var swiper2 = new Swiper(".mySwiper2", {
     disableOnInteraction: false, // Keeps autoplay active after user interaction
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next-2",
+    prevEl: ".swiper-button-prev-2",
   },
   breakpoints: {
     // when window width is >= 992px
+    1200: {
+      slidesPerView: 3, // Shows 2.9 slides on large screens
+    },
     992: {
-      slidesPerView: 2.9, // Shows 2.9 slides on large screens
+      slidesPerView: 2, // Shows 2.9 slides on large screens
+    },
+    768: {
+      slidesPerView: 3, // Shows 2.9 slides on large screens
     },
     // when window width is between 576px and 992px
     576: {
@@ -129,28 +88,6 @@ const mySwiper3 = new Swiper(".mySwiper3", {
   //   prevEl: ".swiper-button-prev",
   // },
 });
-
-var swiperCompanies = new Swiper(".mySwiper4", {
-  loop: true, // Enables loop for continuous sliding
-  autoplay: {
-    delay: 0, // Continuous sliding without delay
-    disableOnInteraction: false, // Autoplay won't stop on user interaction
-  },
-  speed: 1000, // Adjust speed for smooth continuous effect
-  slidesPerView: 3, // Default number of slides (for screens greater than 0px)
-  spaceBetween: 30, // Space between slides
-  centeredSlides: true, // Optional: centers the active slide
-  breakpoints: {
-    576: {
-      slidesPerView: 5, // Shows 5 slides for screens greater than 576px
-    },
-    992: {
-      slidesPerView: 6, // Shows 7 slides for screens greater than 992px
-    },
-  }
-});
-
-
 
 
 const scrollLeftButton = document.querySelector(".scroll-left");
