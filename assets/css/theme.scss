@@ -796,6 +796,11 @@ header {
   }
 }
 
+//styling of career_sect
+
+.career_sect{
+}
+
 .bg_blue {
   background-color: lighten($color: $color_theme, $amount: 30%) !important;
 }
@@ -939,18 +944,18 @@ header {
 
   @keyframes marquee {
     0% {
-      transform: translateX(100%); /* Start off the screen to the right */
+      transform: translateX(100%); 
     }
     100% {
-      transform: translateX(-100%); /* End off the screen to the left */
+      transform: translateX(-100%); 
     }
   }
 
   .info_inner {
-    padding: 1rem;
     article {
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 0;
+      padding-bottom: 1rem;
       width: 100%;
 
       .swiper_btn-sect {
@@ -1035,7 +1040,12 @@ header {
     .tab-content {
       margin-top: 2rem;
     }
+
+    .col_right .profectionals_sect .profectionals_card {
+    width: 100%;
   }
+  }
+  
 }
 
 @media (max-width: 576px) {
@@ -1046,13 +1056,6 @@ header {
     display: none;
   }
 
-  //styling of hero section
-
-  // .info_sec {
-  //   article {
-  //     padding: 0;
-  //   }
-  // }
 
   //styling of services section
 
@@ -1089,9 +1092,7 @@ header {
     }
   }
 
-  .services .col_right .profectionals_sect .profectionals_card {
-    width: 100%;
-  }
+  
 }
 
 
