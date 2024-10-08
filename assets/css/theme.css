@@ -10659,6 +10659,9 @@ ul {
   .sm {
     max-width: 540px !important;
   }
+  .pod_card .heading_sm {
+    font-size: 95% !important;
+  }
 }
 
 @media (max-width: 578px) {

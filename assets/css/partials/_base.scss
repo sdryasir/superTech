@@ -322,6 +322,7 @@ ul {
   }
 }
 
+
 .bg_blue {
   background-color: lighten($color: $color_theme, $amount: 30%);
 }
@@ -358,6 +359,11 @@ ul {
   }
   .sm{
     max-width: 540px!important;
+  }
+  .pod_card{
+    .heading_sm{
+      font-size: 95%!important;
+    }
   }
 }
 
