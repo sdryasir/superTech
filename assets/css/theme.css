@@ -12179,14 +12179,18 @@ header .navbar .collapse {
   .services .companies_slider {
     margin: 2rem;
   }
-  .comunity_sect .star_card-sm {
+  .star_card:hover {
+    -webkit-transform: translateY(-0.2rem);
+            transform: translateY(-0.2rem);
+  }
+  .star_card-sm {
     padding: 2.5rem 1.5rem;
   }
-  .comunity_sect .star_card-sm h3, .comunity_sect .star_card-sm .h3 {
+  .star_card-sm h3, .star_card-sm .h3 {
     font-size: calc(1.5rem + 0.2vw);
     font-weight: 500;
   }
-  .comunity_sect .star_card-sm h3 strong, .comunity_sect .star_card-sm .h3 strong {
+  .star_card-sm h3 strong, .star_card-sm .h3 strong {
     font-size: 55%;
   }
 }

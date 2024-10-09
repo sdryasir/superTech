@@ -1139,7 +1139,12 @@ header {
     }
   }
 
-  .comunity_sect {
+  .star_card{
+    &:hover{
+      transform: translateY(-.2rem);
+    }
+  }
+  
     
     .star_card-sm {
       padding: 2.5rem 1.5rem;
@@ -1151,5 +1156,5 @@ header {
         }
       }
     }
-  }
+  
 }
