@@ -137,7 +137,6 @@ header {
 }
 
 .hero {
-
   picture {
     display: block;
     aspect-ratio: 4/2.9;
@@ -164,7 +163,7 @@ header {
         left: 0;
         color: $black;
         width: fit-content;
-        font-size: .8rem;
+        font-size: 0.8rem;
         white-space: nowrap;
         background-color: $color_white;
         padding: 0.5rem 1rem;
@@ -360,7 +359,7 @@ header {
 .info_inner {
   article {
     width: 25%;
-    padding: 2rem .75rem;
+    padding: 2rem 0.75rem;
 
     .swiper_btn-sect {
       position: relative;
@@ -605,7 +604,7 @@ header {
     padding: 1rem;
     border-radius: 1.5rem;
     padding-bottom: 2.5rem;
-    
+
     margin-bottom: 2.5rem;
     &:after {
       content: attr(data-content);
@@ -651,15 +650,12 @@ header {
     .col_left {
       padding: 0 1rem;
 
-      .tab_inner{
+      .tab_inner {
         display: flex;
         flex-direction: column;
         gap: 2rem;
       }
-
-      
     }
-
   }
 
   .comment_sect {
@@ -674,8 +670,6 @@ header {
   }
 
   .col_right {
-
-
     //styling of our_clients section
 
     .sliding-info-cards {
@@ -691,7 +685,6 @@ header {
       .info-card {
         padding: 0 1.5rem;
         img {
-
           height: 1.7rem;
         }
       }
@@ -798,8 +791,60 @@ header {
 
 //styling of career_sect
 
-.career_sect{
+.comunity_sect {
+  .sect_heading{
+    margin-bottom: 1.3rem;
+  }
+  .comunity_img-sect {
+    aspect-ratio: 5/3.1;
+    position: relative;
+    overflow: hidden;
+
+
+    .img_top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .img_bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin-bottom: 0;
+      transform: translateY(2rem);
+    }
+
+    h2 {
+      position: absolute;
+      bottom: 3rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: $black;
+      z-index: 1;
+      
+      strong {
+        span {
+          color: $pink;
+        }
+        
+      }
+      a{
+        text-decoration: none;
+        display: inline-block;
+        color: $blue;
+        font-size: 50%;
+        font-weight: normal;
+      }
+    }
+
+  }
+
+  
 }
+
 
 .bg_blue {
   background-color: lighten($color: $color_theme, $amount: 30%) !important;
@@ -862,38 +907,37 @@ header {
   //styling of  info section
   .info_inner {
     article {
-      width: 50%;      
+      width: 50%;
     }
 
     aside {
       width: 50%;
-      padding: 1rem!important;
+      padding: 1rem !important;
     }
   }
 
-  .services{
-    .row{
-      .col_left{
-        .tab_inner{
+  .services {
+    .row {
+      .col_left {
+        .tab_inner {
           flex-direction: row;
           background-color: transparent;
         }
       }
     }
 
-    .no_section{
+    .no_section {
       width: fit-content;
-        display: flex;
-        justify-content: center;
+      display: flex;
+      justify-content: center;
+      background-color: transparent;
+      &:after {
+        right: 50%;
+        bottom: 3rem;
+        transform: translateX(50%);
         background-color: transparent;
-        &:after{
-          right: 50%;
-          bottom: 3rem;
-          transform: translateX(50%);
-          background-color: transparent;
-        }
-      ul{
-        
+      }
+      ul {
         align-items: center;
         background-color: lighten($color: $color_black, $amount: 70%);
         padding: 2rem 1rem;
@@ -901,7 +945,7 @@ header {
         border-radius: 1rem;
       }
     }
-  } 
+  }
 }
 
 @media (max-width: 992px) {
@@ -944,10 +988,10 @@ header {
 
   @keyframes marquee {
     0% {
-      transform: translateX(100%); 
+      transform: translateX(100%);
     }
     100% {
-      transform: translateX(-100%); 
+      transform: translateX(-100%);
     }
   }
 
@@ -967,28 +1011,24 @@ header {
       }
     }
 
-    aside{
+    aside {
       width: 100%;
     }
-
-
   }
 
   //styling of services section
 
-  .services{
-    .row{
-      .col_left{
-        .tab_inner{
+  .services {
+    .row {
+      .col_left {
+        .tab_inner {
           flex-direction: column;
         }
       }
     }
   }
-
-  
-
 }
+
 @media (max-width: 786px) {
   .d_lg-n {
     display: none !important;
@@ -1042,10 +1082,18 @@ header {
     }
 
     .col_right .profectionals_sect .profectionals_card {
-    width: 100%;
+      width: 100%;
+    }
   }
+
+  //styling of comunity section
+
+  .comunity_sect {
+    
+    .comunity_img-sect {
+      aspect-ratio: 5 / 4.5;
+    }
   }
-  
 }
 
 @media (max-width: 576px) {
@@ -1055,7 +1103,6 @@ header {
   .d_sm-n {
     display: none;
   }
-
 
   //styling of services section
 
@@ -1092,7 +1139,17 @@ header {
     }
   }
 
-  
+  .comunity_sect {
+    
+    .star_card-sm {
+      padding: 2.5rem 1.5rem;
+      h3 {
+        font-size: calc(1.5rem + 0.2vw);
+        font-weight: 500;
+        strong {
+          font-size: 55%;
+        }
+      }
+    }
+  }
 }
-
-

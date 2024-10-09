@@ -1,3 +1,20 @@
+// let boxEl = document.getElementById('box');
+// let secondSpan = document.getElementById('second-span');
+
+
+// secondSpan.remove();
+
+
+// console.log(boxEl.innerText);
+// console.log(boxEl.textContent);
+
+// <div id="box">
+//     <span>Hello Jazib sb</span>
+//     <span id="second-span" style="display: none;">Bye All</span>
+//   </div>
+
+
+
 // AOS Initilization
 AOS.init();
 
