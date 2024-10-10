@@ -184,6 +184,23 @@ ul {
   }
 }
 
+.heading_alert{
+  .heading_wrapper{
+    display: flex;
+    justify-content: flex-start;
+    .alert_text{
+      margin: 0 0 0 .5rem;
+      background-color: $orange;
+      padding: .5rem .5rem;
+      border-radius: .35rem;
+      font-size: 35%;
+      height: fit-content;
+      font-weight: normal;
+      color: $color_white;
+    }
+  }
+}
+
 .heading_main {
   font-size: calc(1.7rem + 0.5vw);
   font-weight: 600;

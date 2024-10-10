@@ -139,3 +139,34 @@ scrollLeftButton.addEventListener("click", () => {
 scrollRightButton.addEventListener("click", () => {
   scrollTabs(100); // Adjust this value for scroll speed
 });
+
+
+// add active class on hover
+
+
+document.querySelectorAll('.comment_item').forEach(item => {
+  item.addEventListener('mouseenter', function() {
+    // Remove 'active' class from the currently active card
+    document.querySelectorAll('.comment_item.active').forEach(activeItem => {
+      activeItem.classList.remove('active');
+    });
+
+    // Add 'active' class to the hovered card
+    this.classList.add('active');
+  });
+});
+
+//auto play modal video
+// Get the video element
+const video = document.getElementById('modalVideo');
+
+// Play the video when the modal is shown
+document.getElementById('exampleModal').addEventListener('shown.bs.modal', function () {
+  video.play();
+});
+
+// Pause the video and reset time when the modal is hidden
+document.getElementById('exampleModal').addEventListener('hidden.bs.modal', function () {
+  video.pause();
+  video.currentTime = 0; // Optionally reset to start
+});
