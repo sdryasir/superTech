@@ -10,6 +10,8 @@
 
 //styling of header section
 
+
+
 .comp_logo {
   height: calc(3rem + 1.5vw);
   fill: $color_white;
@@ -593,7 +595,6 @@ header {
 
   /* For larger screens */
   @media (min-width: 787px) {
-
     .scroll-left,
     .scroll-right {
       display: none;
@@ -722,39 +723,7 @@ header {
   .col_right {
     //styling of our_clients section
 
-    .sliding-info-cards {
-      width: 100%;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-    }
-
-    .info-cards {
-      display: flex;
-      animation: 15s infinite-move infinite linear;
-
-      .info-card {
-        padding: 0 1.5rem;
-
-        img {
-          height: 1.7rem;
-        }
-      }
-    }
-
-    .sliding-info-cards:hover .info-cards {
-      animation-play-state: paused;
-    }
-
-    @keyframes infinite-move {
-      0% {
-        transform: translateX(0%);
-      }
-
-      100% {
-        transform: translateX(-100%);
-      }
-    }
+    
 
     .profectionals_sect {
       .profectionals_card {
@@ -850,6 +819,7 @@ header {
   }
 }
 
+
 //styling of career_sect
 
 .comunity_sect {
@@ -861,7 +831,6 @@ header {
     aspect-ratio: 5/3.1;
     position: relative;
     overflow: hidden;
-
 
     .img_top {
       position: absolute;
@@ -891,7 +860,6 @@ header {
         span {
           color: $pink;
         }
-
       }
 
       a {
@@ -902,12 +870,8 @@ header {
         font-weight: normal;
       }
     }
-
   }
-
-
 }
-
 
 .bg_blue {
   background-color: lighten($color: $color_theme, $amount: 30%) !important;
@@ -924,9 +888,9 @@ header {
   position: relative;
   border-radius: 1.5rem;
   // overflow: hidden;
-  
+
   flex: 1;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   height: 100%;
   // box-shadow: .5rem .5rem 1px $black;
 
@@ -934,7 +898,7 @@ header {
     content: attr(data-content);
     text-transform: capitalize;
     font-weight: 500;
-    font-size: calc(1rem + .25vw);
+    font-size: calc(1rem + 0.25vw);
     position: absolute;
     bottom: 1rem;
     left: 1rem;
@@ -944,25 +908,26 @@ header {
 
   &:after {
     position: absolute;
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 73%);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(255, 255, 255, 0) 73%
+    );
     z-index: -1;
     border-radius: 1.5rem;
-    box-shadow: .25rem .25rem 1px $color_white;
+    box-shadow: 0.25rem 0.25rem 1px $color_white;
   }
 
   .comment_video {
     position: absolute;
     right: 1rem;
     top: 1rem;
-    
-
-
 
     .click_btn {
       width: 2rem;
@@ -973,34 +938,33 @@ header {
       // line-height: 2rem;
       // text-align: center;
       border-radius: 50%;
-      box-shadow: .15rem .15rem 1px $color_black;
+      box-shadow: 0.15rem 0.15rem 1px $color_black;
       z-index: 3;
-
     }
 
-    .modal-header{
-      button{
+    .modal-header {
+      button {
         width: 1.5rem;
         height: 1.5rem;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: .5rem;
+        font-size: 0.5rem;
         border: 1px solid $color_black;
       }
     }
-    .modal-body{
-      video{
+    .modal-body {
+      video {
         width: 100%;
       }
     }
   }
 
   .img_wrapper {
-    height: 40vh;
+    height: 55vh;
     border-radius: 1.5rem;
-    box-shadow: .5rem .5rem 1px $color_black;
+    box-shadow: 0.5rem 0.5rem 1px $color_black;
     position: relative;
     z-index: -2;
     img {
@@ -1010,15 +974,160 @@ header {
       border-radius: 1.5rem;
     }
   }
-
 }
 
 .comment_item.active {
-  flex: 3;
+  flex: 2;
+}
+
+//styling of mentorship section
+
+.mentorship {
+  overflow: hidden;
+  .row{
+    overflow: visible;
+
+    [class^="col-"]{
+      overflow: visible;
+    }
+    
+  }
+
+  .col-left-a{
+    position: relative;
+  }
+  .owner_profile {
+    aspect-ratio: 6/5;
+    border-radius: 1.5rem;
+    transition: all .3s linear;
+    border-radius: 1.5rem;
+    position: relative;
+    z-index: 2;
+
+    
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      box-shadow: 0.25rem 0.25rem 1px $color_white;
+      border-radius: 1.5rem;
+      transition: all .3s linear;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1.5rem;
+      box-shadow: .5rem 0.5rem 1px $color_black;
+      transition: all .3s linear;
+    }
+
+    &:hover{
+      box-shadow: 0 0 0 transparent;
+      img{
+        box-shadow: 0 0 0 transparent;
+      }
+    }
+  }
+
+  .pod_slider {
+    position: absolute;
+    // z-index: -1;
+    display: flex;
+    width: 100vw;
+    bottom: 1.5rem;
+    overflow: visible;
+    top: calc(100% - 17rem);
+    transform: translateX(-50%);
+
+    .sliding-info-cards{
+      overflow: visible;
+
+      .info-cards{
+        // background-color: green;
+        height: 1rem;
+      }
+
+      .info-card{
+
+        border-radius: .5rem;
+        height: 8rem;
+        transition: all .3s linear;
+        transition: height .3s;
+        padding: 0!important;
+        box-shadow: .25rem .25rem 1px $color_black;
+        margin: .5rem;
+        border: 1px solid transparent;
+        figure{
+          width: calc(5rem + 3vw);
+          // aspect-ratio: 3/3.5;
+          padding: .5rem;
+          position: relative;
+    
+          img{
+            // width: 100%;
+            display: block;
+            object-fit: cover;
+            height: 7rem;
+            border-radius: .5rem;
+            margin: 0 auto;
+            // box-shadow: .25rem .25rem 1px green;
+          }
+    
+          h4{
+            position: absolute;
+            top: 100%;
+            left: 0.5rem;
+            // transform: translateY(100%);
+          }
+        }
+    
+        h4{
+          opacity: 0;
+          transition: all .3s linear;
+        }
+    
+        &:hover{
+          height: 12rem;
+          border-color:  $color_black;
+            // padding-bottom: 3rem;
+         
+          h4{
+            opacity: 1;
+            
+          }
+        }
+      }
+    }
+  }
+
+  
+  
+  
+  
+  
+  .mentorship_description {
+    position: relative;
+    padding-left: 2rem;
+    .sect_heading {
+      small {
+        text-transform: capitalize;
+        font-size: 45%;
+        line-height: 1.5;
+      }
+    }
+  }
+
+
 }
 
 @media (max-width: 1200px) {
-
   //styling of hero section
   .hero_inner {
     figcaption {
@@ -1209,7 +1318,7 @@ header {
 
   //atyling of comments_sect
 
-  .comments_sect{
+  .comments_sect {
     display: none;
   }
 }
@@ -1274,7 +1383,6 @@ header {
   //styling of comunity section
 
   .comunity_sect {
-
     .comunity_img-sect {
       aspect-ratio: 5 / 4.5;
     }
@@ -1324,17 +1432,16 @@ header {
       }
     }
 
-    .companies_slider {
+    .pod_slider {
       margin: 2rem;
     }
   }
 
   .star_card {
     &:hover {
-      transform: translateY(-.2rem);
+      transform: translateY(-0.2rem);
     }
   }
-
 
   .star_card-sm {
     padding: 2.5rem 1.5rem;
@@ -1348,5 +1455,4 @@ header {
       }
     }
   }
-
 }

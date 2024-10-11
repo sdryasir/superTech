@@ -412,6 +412,49 @@ ul {
 }
 
 
+.pod_slider {
+  .sliding-info-cards {
+    
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  .info-cards {
+    
+    display: flex;
+    align-items: flex-start;
+    
+    animation: 15s infinite-move infinite linear;
+
+    .info-card {
+      padding: 0 1.5rem;
+
+      img {
+        height: 1.7rem;
+      }
+    }
+  }
+
+  .sliding-info-cards:hover .info-cards {
+    animation-play-state: paused;
+  }
+
+  @keyframes infinite-move {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+
+
+
 
 
 .bg_blue {
@@ -452,9 +495,9 @@ ul {
     max-width: 540px!important;
   }
   .pod_card{
-    img{
-      // scale: .8;
-    }
+    // img{
+    //   // scale: .8;
+    // }
     .heading_sm{
       font-size: 95%!important;
     }

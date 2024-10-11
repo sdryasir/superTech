@@ -1,3 +1,66 @@
+
+
+
+/* 
+
+
+let boxWrap = document.querySelector('.boxWrap');
+let boxInner = document.querySelector('.boxInner');
+let box = document.querySelector('.box');
+let boxBtn = document.querySelector('.boxBtn');
+
+
+boxWrap.addEventListener('click', function(){
+  console.log("boxWrap is Clicked");
+  
+})
+
+boxInner.addEventListener('click', function(){
+  console.log("boxInner is Clicked");
+  
+})
+
+box.addEventListener('click', function(){
+  box.classList.add("bg-red")
+  console.log("box is Clicked");
+  
+})
+
+boxBtn.addEventListener('click', function(e){
+  console.log("boxBtn is Clicked");
+  e.stopPropagation();
+  
+})*/
+
+
+
+/*<div class="boxWrap">
+    <div class="boxInner">
+      <div class="box">
+        <button class="boxBtn">Click Here!</button>
+      </div>
+    </div>
+  </div>  <!-- /.boxWrap -->
+  
+  
+  
+.box{
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.bg-red{
+  background-color: red;
+}
+
+  */
+
+
 // let boxEl = document.getElementById('box');
 // let secondSpan = document.getElementById('second-span');
 
@@ -156,8 +219,9 @@ document.querySelectorAll('.comment_item').forEach(item => {
   });
 });
 
+
+
 //auto play modal video
-// Get the video element
 const video = document.getElementById('modalVideo');
 
 // Play the video when the modal is shown
