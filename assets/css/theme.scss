@@ -659,7 +659,7 @@ header {
     background-color: lighten($color: $color_black, $amount: 70%);
     // padding: 1rem;
     border-radius: 1.5rem;
-    padding-bottom: 2.5rem;
+    padding: 1.5rem;
 
     margin-bottom: 2.5rem;
 
@@ -938,8 +938,8 @@ header {
     top: 1rem;
 
     .click_btn {
-      width: 2rem;
-      height: 2rem;
+      width: 3.7rem;
+      height: 3.7rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -948,7 +948,56 @@ header {
       border-radius: 50%;
       box-shadow: 0.15rem 0.15rem 1px $color_black;
       z-index: 3;
+      transition: all .3s linear;
+      overflow: hidden;
+      i{
+        font-size: 1.5rem;
+      }
+      span{
+        opacity: 0;
+        width: 0;
+        text-transform: uppercase;
+        // transform: translateX(-100%);
+        transition: all .3s linear;
+      }
+      &:hover{
+  
+        // &:before{
+        //   opacity: 1;
+        // }
+        width: 6.5rem;
+        border-radius: 2rem;
+        color: $blue_dark;
+        padding: 0 .5rem;
+
+        
+        span{
+          opacity: 1;
+          width: 2rem;
+          // color: $black;
+          // transform: translateX(0);
+          display: inline-block;
+          margin-left: .5rem;
+        }
+      }
     }
+    // &:before{
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 2rem;
+    //   height: 2rem;
+    //   background-color: green;
+    //   z-index: 1;
+    //   border-radius: 50%;
+    //   opacity: 0;
+    //   transition: all .3s linear;
+    //   transform: translateX(100%);
+      
+    // }
+
+
 
     .modal-header {
       button {
