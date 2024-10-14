@@ -1,4 +1,6 @@
 $yellow: #fc9c03;
+$blue_dark: #0220A5;
+$blue_light: #025AF6;
 $color_theme: #433b89;
 $color_primary: #6b71b5;
 $color_light-gray: #f8f8f8;
@@ -372,7 +374,7 @@ ul {
   padding: 6rem 0;
 }
 .frosten_bg {
-  background-color: rgba($color: $color_black, $alpha: 0.7);
+  background-color: rgba($color: $blue_dark, $alpha: 0.8);
   backdrop-filter: blur(25px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
@@ -431,9 +433,7 @@ ul {
     .info-card {
       padding: 0 1.5rem;
 
-      img {
-        height: 1.7rem;
-      }
+      
     }
   }
 
@@ -462,6 +462,8 @@ ul {
 }
 
 @media (max-width: 1200px) {
+
+  
   .sm{
     max-width: 960px!important;
   }

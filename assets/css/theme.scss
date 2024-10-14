@@ -10,8 +10,6 @@
 
 //styling of header section
 
-
-
 .comp_logo {
   height: calc(3rem + 1.5vw);
   fill: $color_white;
@@ -375,14 +373,15 @@ header {
 
 //styling of info_section
 .info_sec {
-  background-color: #8adbe6;
+  // background-color: #8adbe6;
 
   .info_bg {
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 102%;
     // z-index: -1;
     object-fit: cover;
   }
@@ -498,6 +497,24 @@ header {
     }
   }
 
+  .tab-controls {
+    .scroll-left,
+    .scroll-right {
+      display: none !important;
+      padding: 1.2rem 1.5rem;
+      cursor: pointer;
+      border-radius: 0;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      z-index: 1;
+      font-size: 0.75rem;
+      color: $color_white;
+      top: -0.2rem;
+      border: 0;
+    }
+  }
+
   .nav-tabs {
     justify-content: center;
     border-color: transparent;
@@ -525,7 +542,7 @@ header {
     }
 
     .nav-link.active {
-      background-color: $color_theme;
+      background-color: $blue_dark;
       color: $color_white;
       border-radius: 0.5rem;
 
@@ -563,42 +580,30 @@ header {
     }
 
     .scrollable-tabs::-webkit-scrollbar {
-      display: none;
-      /* Hide scrollbar for a cleaner look */
-    }
-
-    .scroll-left,
-    .scroll-right {
-      width: 40px;
-      height: 40px;
-      background-color: #ddd;
-      border: none;
-      cursor: pointer;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 18px;
-      z-index: 10;
-      /* Ensure buttons are on top */
+      /* Hide scrollbar for a cleaner look */
     }
 
     .scroll-left {
       position: absolute;
       left: 0;
+      background: rgb(2, 90, 246);
+      background: linear-gradient(
+        95deg,
+        rgba(2, 90, 246, 1) 68%,
+        rgba(255, 255, 255, 0.006039915966386533) 100%
+      );
     }
 
     .scroll-right {
       position: absolute;
       right: 0;
-    }
-  }
-
-  /* For larger screens */
-  @media (min-width: 787px) {
-    .scroll-left,
-    .scroll-right {
-      display: none;
-      /* Hide buttons on larger screens */
+      background: rgb(2, 90, 246);
+      background: linear-gradient(
+        270deg,
+        rgba(2, 90, 246, 1) 68%,
+        rgba(255, 255, 255, 0.006039915966386533) 100%
+      );
     }
   }
 
@@ -625,12 +630,18 @@ header {
       margin-bottom: 0.75rem;
     }
 
+    .active {
+      .services_list-item {
+        background-color: lighten($color: $blue_dark, $amount: 50%);
+      }
+    }
+
     span {
       position: relative;
       display: inline-block;
       padding: 0.35rem 0.75rem;
       margin-left: 1rem;
-      background-color: lighten($color: $color_theme, $amount: 50%);
+      background-color: lighten($color: $blue_dark, $amount: 60%);
       border-radius: 2rem;
       font-size: calc(0.7rem + 0.2vw);
 
@@ -646,7 +657,7 @@ header {
 
   .no_section {
     background-color: lighten($color: $color_black, $amount: 70%);
-    padding: 1rem;
+    // padding: 1rem;
     border-radius: 1.5rem;
     padding-bottom: 2.5rem;
 
@@ -698,7 +709,7 @@ header {
 
   .row {
     .col_left {
-      padding: 0 1rem;
+      padding: 0;
 
       .tab_inner {
         display: flex;
@@ -722,8 +733,6 @@ header {
 
   .col_right {
     //styling of our_clients section
-
-    
 
     .profectionals_sect {
       .profectionals_card {
@@ -818,7 +827,6 @@ header {
     }
   }
 }
-
 
 //styling of career_sect
 
@@ -984,27 +992,24 @@ header {
 
 .mentorship {
   overflow: hidden;
-  .row{
+  .row {
     overflow: visible;
 
-    [class^="col-"]{
+    [class^="col-"] {
       overflow: visible;
     }
-    
   }
 
-  .col-left-a{
+  .col-left-a {
     position: relative;
   }
   .owner_profile {
     aspect-ratio: 6/5;
     border-radius: 1.5rem;
-    transition: all .3s linear;
+    transition: all 0.3s linear;
     border-radius: 1.5rem;
     position: relative;
     z-index: 2;
-
-    
 
     &:after {
       content: "";
@@ -1016,7 +1021,7 @@ header {
       z-index: 0;
       box-shadow: 0.25rem 0.25rem 1px $color_white;
       border-radius: 1.5rem;
-      transition: all .3s linear;
+      transition: all 0.3s linear;
     }
 
     img {
@@ -1024,13 +1029,13 @@ header {
       height: 100%;
       object-fit: cover;
       border-radius: 1.5rem;
-      box-shadow: .5rem 0.5rem 1px $color_black;
-      transition: all .3s linear;
+      box-shadow: 0.5rem 0.5rem 1px $color_black;
+      transition: all 0.3s linear;
     }
 
-    &:hover{
+    &:hover {
       box-shadow: 0 0 0 transparent;
-      img{
+      img {
         box-shadow: 0 0 0 transparent;
       }
     }
@@ -1046,72 +1051,128 @@ header {
     top: calc(100% - 17rem);
     transform: translateX(-50%);
 
-    .sliding-info-cards{
+    .sliding-info-cards {
       overflow: visible;
 
-      .info-cards{
+      .info-cards {
         // background-color: green;
         height: 1rem;
       }
 
-      .info-card{
-
-        border-radius: .5rem;
+      .info-card {
+        border-radius: 0.5rem;
         height: 8rem;
-        transition: all .3s linear;
-        transition: height .3s;
-        padding: 0!important;
-        box-shadow: .25rem .25rem 1px $color_black;
-        margin: .5rem;
+        transition: all 0.3s linear;
+        transition: height 0.3s;
+        padding: 0 !important;
+        box-shadow: 0.25rem 0.25rem 1px $color_black;
+        margin: 0.5rem;
         border: 1px solid transparent;
-        figure{
+        figure {
           width: calc(5rem + 3vw);
           // aspect-ratio: 3/3.5;
-          padding: .5rem;
+          padding: 0.5rem;
           position: relative;
-    
-          img{
+
+          img {
             // width: 100%;
             display: block;
             object-fit: cover;
             height: 7rem;
-            border-radius: .5rem;
+            border-radius: 0.5rem;
             margin: 0 auto;
             // box-shadow: .25rem .25rem 1px green;
           }
-    
-          h4{
+
+          h4 {
             position: absolute;
             top: 100%;
             left: 0.5rem;
             // transform: translateY(100%);
           }
         }
-    
-        h4{
+
+        h4 {
           opacity: 0;
-          transition: all .3s linear;
+          transition: all 0.3s linear;
         }
-    
-        &:hover{
+
+        &:hover {
           height: 12rem;
-          border-color:  $color_black;
-            // padding-bottom: 3rem;
-         
-          h4{
+          border-color: $color_black;
+          // padding-bottom: 3rem;
+
+          h4 {
             opacity: 1;
-            
           }
         }
       }
     }
   }
 
-  
-  
-  
-  
-  
+  // .marquee-content {
+  //   display: flex;
+  //   gap: 1rem;
+  //   width: max-content;
+  //   margin-top: -300px;
+  // }
+
+  // .marquee-item {
+  //   position: relative;
+  //   margin: 0;
+  //   img {
+  //     width: 180px;
+  //     height: 100%;
+  //     object-fit: cover;
+  //     border-radius: 10px;
+  //   }
+
+  //   .caption {
+  //     transform: translateY(-100%);
+  //     width: 100%;
+  //     transition: all 0.4s linear;
+  //     opacity: 0;
+  //     text-align: center;
+  //     text-transform: capitalize;
+  //     font-weight: bold;
+  //   }
+
+  //   &::after {
+  //     position: absolute;
+  //     content: "";
+  //     top: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //     background-color: white;
+  //     transform: translate(5px, 5px);
+  //     border-radius: 10px;
+  //     z-index: -1;
+  //     transition: all 0.4s linear;
+  //   }
+  //   &::before {
+  //     position: absolute;
+  //     content: "";
+  //     top: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //     background-color: black;
+  //     transform: translate(10px, 10px);
+  //     border-radius: 10px;
+  //     z-index: -2;
+  //     transition: all 0.4s linear;
+  //   }
+  //   &:hover::after,
+  //   &:hover::before {
+  //     height: calc(100% + 2rem);
+  //   }
+  //   &:hover .caption {
+  //     transform: translateY(0);
+  //     opacity: 1;
+  //   }
+  // }
+
   .mentorship_description {
     position: relative;
     padding-left: 2rem;
@@ -1123,8 +1184,6 @@ header {
       }
     }
   }
-
-
 }
 
 @media (max-width: 1200px) {
@@ -1199,6 +1258,7 @@ header {
     }
   }
 
+  //styling of services section
   .services {
     .row {
       .col_left {
@@ -1231,6 +1291,28 @@ header {
       }
     }
   }
+
+  //styling of mentorship section
+
+  .mentorship {
+    padding-bottom: 5rem;
+    // .mentorship_col-wrapper{
+    //   flex-direction: column-reverse;
+    // }
+    .owner_profile {
+      margin-bottom: 10rem;
+    }
+    .pod_slider {
+      bottom: 0;
+      // transform: translateY(5rem);
+
+      // .info-card{
+      //   img{
+      //     // width: 100
+      //   }
+      // }
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -1258,6 +1340,11 @@ header {
     .header_close {
       background-color: transparent;
       border: 0;
+    }
+  }
+
+  .info_sec {
+    .info_bg {
     }
   }
 
@@ -1307,6 +1394,17 @@ header {
   //styling of services section
 
   .services {
+    .no_section {
+      margin-bottom: 0;
+      &:after {
+        right: 50%;
+        bottom: 4.5rem;
+        transform: translate(50%, 50%);
+        white-space: nowrap;
+        background-color: transparent;
+      }
+    }
+
     .row {
       .col_left {
         .tab_inner {
@@ -1353,6 +1451,10 @@ header {
   //styling of .services section
 
   .services {
+    .no_section {
+      margin-bottom: 0;
+    }
+
     .nav-tabs {
       width: 100%;
 
@@ -1363,12 +1465,11 @@ header {
       }
     }
 
-    .scroll-right,
-    .scroll-left {
-      // border-radius: 50%!important;
-      padding: 1.45rem;
-      top: 50%;
-      transform: translateY(-54%);
+    .tab-controls {
+      .scroll-left,
+      .scroll-right {
+        display: flex !important;
+      }
     }
 
     .tab-content {
@@ -1404,15 +1505,6 @@ header {
     .no_section {
       width: 100% !important;
 
-      &:after {
-        right: 50%;
-        bottom: 1rem;
-        transform: translate(50%, 50%);
-
-        white-space: nowrap;
-        background-color: transparent;
-      }
-
       P {
         font-size: calc(0.6rem + 0.25vw);
 
@@ -1423,7 +1515,7 @@ header {
 
       ul {
         justify-content: space-between;
-
+        width: 100%;
         gap: 0;
       }
 
@@ -1444,7 +1536,7 @@ header {
   }
 
   .star_card-sm {
-    padding: 2.5rem 1.5rem;
+    padding: 2.5rem 1rem;
 
     h3 {
       font-size: calc(1.5rem + 0.2vw);

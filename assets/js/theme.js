@@ -220,6 +220,11 @@ document.querySelectorAll('.comment_item').forEach(item => {
 });
 
 
+//code (gsap) for marquee slider
+
+
+
+
 
 //auto play modal video
 const video = document.getElementById('modalVideo');
