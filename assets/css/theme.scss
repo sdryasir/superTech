@@ -180,7 +180,8 @@ header {
         border-radius: 2.5rem;
         z-index: 2;
         height: fit-content;
-        animation: moveY 10s infinite;
+        animation: moveY 3s infinite;
+        // animation:  duration timing-function delay iteration-count direction fill-mode;
       }
     }
 

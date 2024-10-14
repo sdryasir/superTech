@@ -10709,7 +10709,7 @@ body {
 }
 
 .btn_blue-bg {
-  background-color: #6b71b5;
+  background-color: #0220A5;
   color: #ffffff;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -11580,8 +11580,8 @@ header .navbar .collapse {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  -webkit-animation: moveY 10s infinite;
-          animation: moveY 10s infinite;
+  -webkit-animation: moveY 3s infinite;
+          animation: moveY 3s infinite;
 }
 
 @-webkit-keyframes moveY {
