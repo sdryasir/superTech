@@ -37,6 +37,73 @@ body {
   font-family: $font-one;
 }
 
+//styling of slider section
+
+
+$item-width: 200px;
+$item-height: 200px;
+
+
+$itemn-quantity: 10;
+
+
+$animation-duration: 15s;
+
+body {
+  overflow: hidden;
+  overflow-y: auto;
+}
+*{
+  // border: 1px solid red;
+}
+
+
+.slider-wrap{
+  // position: absolute;
+  // bottom: 0;
+  // left: 0;
+  
+  width: 100%;
+  height: $item-height;
+  // border: 1px solid blue;
+
+  .slider-list{
+    display: flex;
+    min-width: calc(#{$item-width} * #{$itemn-quantity});
+    position: relative;
+    
+  }
+
+  .image-item{
+    width: $item-width;
+    height: $item-height;
+    position: absolute;
+    left: 100%;
+    animation: moveItems $animation-duration linear infinite;
+    animation-delay: calc((#{$animation-duration} / #{$itemn-quantity}) * (var(--item-position) - 1));
+    
+    img{
+      width: 100%;
+      height: $item-height;
+      object-fit: cover;
+    }
+  }
+
+  &:hover .image-item{
+    animation-play-state: paused;
+  }
+}
+
+@keyframes moveItems {
+  0%{
+    left: 100%;
+  }
+  100%{
+    left: calc(#{$item-width} * -1);
+  }
+}
+
+
 .container_partial {
   // max-width: calc($container-width + (50% - $container-width / 2));
   max-width: calc(#{$container-sm} + (50% - #{$container-sm / 2}));
@@ -512,3 +579,6 @@ ul {
   }
   
 }
+
+
+

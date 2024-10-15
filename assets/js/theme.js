@@ -76,6 +76,41 @@ boxBtn.addEventListener('click', function(e){
 //     <span id="second-span" style="display: none;">Bye All</span>
 //   </div>
 
+//code for generic slider 
+
+document.querySelectorAll('.marquee-content').forEach((marqueeContent) => {
+  let cloneContent = marqueeContent.innerHTML; // Clone the content
+  marqueeContent.innerHTML += cloneContent; // Append the cloned content to create the loop
+
+  let scrollAmount = 0;
+  let scrollSpeed = 1; // Adjust speed as necessary
+
+  function animateMarquee() {
+    scrollAmount += scrollSpeed;
+
+    // Reset the scroll position when reaching half the scroll width (since the content is duplicated)
+    if (scrollAmount >= marqueeContent.scrollWidth / 2) {
+      scrollAmount = 0;
+    }
+
+    marqueeContent.style.transform = `translateX(-${scrollAmount}px)`;
+    requestAnimationFrame(animateMarquee); // Continue the animation
+  }
+
+  // Start the animation
+  animateMarquee();
+
+  // Pause on hover
+  marqueeContent.addEventListener('mouseover', () => {
+    scrollSpeed = 0;
+  });
+
+  // Resume on mouse leave
+  marqueeContent.addEventListener('mouseleave', () => {
+    scrollSpeed = 1;
+  });
+});
+
 
 
 // AOS Initilization
