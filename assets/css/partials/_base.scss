@@ -87,6 +87,11 @@ body {
       height: $item-height;
       object-fit: cover;
     }
+
+    h2{
+      padding-top: .5rem;
+      white-space: nowrap;
+    }
   }
 
   &:hover .image-item{
@@ -537,6 +542,10 @@ ul {
 
   .sec_space-lg{
     padding: 3rem 0;
+  }
+
+  .d-lg-none{
+    display: none;
   }
   
 }

@@ -10694,6 +10694,11 @@ body {
      object-fit: cover;
 }
 
+.slider-wrap .image-item h2, .slider-wrap .image-item .h2 {
+  padding-top: .5rem;
+  white-space: nowrap;
+}
+
 .slider-wrap:hover .image-item {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
@@ -11217,6 +11222,9 @@ ul {
   }
   .sec_space-lg {
     padding: 3rem 0;
+  }
+  .d-lg-none {
+    display: none;
   }
 }
 
@@ -11981,7 +11989,7 @@ header .navbar .collapse {
   font-size: 18px;
   z-index: 1;
   font-size: 0.75rem;
-  color: #ffffff;
+  color: #0220A5;
   top: -0.2rem;
   border: 0;
 }
@@ -12064,15 +12072,16 @@ header .navbar .collapse {
   .services .scroll-left {
     position: absolute;
     left: 0;
-    background: #025af6;
-    background: linear-gradient(95deg, #025af6 68%, rgba(255, 255, 255, 0.00603992) 100%);
+    background: white;
+    background: -webkit-gradient(linear, left top, right top, color-stop(68%, white), to(rgba(255, 255, 255, 0.00603992)));
+    background: linear-gradient(90deg, white 68%, rgba(255, 255, 255, 0.00603992) 100%);
   }
   .services .scroll-right {
     position: absolute;
     right: 0;
-    background: #025af6;
-    background: -webkit-gradient(linear, right top, left top, color-stop(68%, #025af6), to(rgba(255, 255, 255, 0.00603992)));
-    background: linear-gradient(270deg, #025af6 68%, rgba(255, 255, 255, 0.00603992) 100%);
+    background: white;
+    background: -webkit-gradient(linear, right top, left top, color-stop(68%, white), to(rgba(255, 255, 255, 0.00603992)));
+    background: linear-gradient(270deg, white 68%, rgba(255, 255, 255, 0.00603992) 100%);
   }
 }
 
@@ -12221,6 +12230,12 @@ header .navbar .collapse {
   height: 2rem;
 }
 
+.services .col_right .slider-wrap h2, .services .col_right .slider-wrap .h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .services .col_right .slider-wrap .slider-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12242,8 +12257,8 @@ header .navbar .collapse {
   left: 100%;
   -webkit-animation: moveItems 15s linear infinite;
           animation: moveItems 15s linear infinite;
-  -webkit-animation-delay: calc((15s / 10) * (var(--item-position) - 1));
-          animation-delay: calc((15s / 10) * (var(--item-position) - 1));
+  -webkit-animation-delay: calc( (15s / 10) * (var(--item-position) - 1));
+          animation-delay: calc( (15s / 10) * (var(--item-position) - 1));
 }
 
 .services .col_right .slider-wrap .image-item img {
@@ -12481,8 +12496,8 @@ header .navbar .collapse {
   -webkit-box-shadow: 0.15rem 0.15rem 1px #2a2a2a;
           box-shadow: 0.15rem 0.15rem 1px #2a2a2a;
   z-index: 3;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
   overflow: hidden;
 }
 
@@ -12494,22 +12509,22 @@ header .navbar .collapse {
   opacity: 0;
   width: 0;
   text-transform: uppercase;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .comment_item .comment_video .click_btn:hover {
   width: 6.5rem;
   border-radius: 2rem;
   color: #0220A5;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
 }
 
 .comment_item .comment_video .click_btn:hover span {
   opacity: 1;
   width: 2rem;
   display: inline-block;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 .comment_item .comment_video .modal-header button {
@@ -12572,7 +12587,8 @@ header .navbar .collapse {
   position: relative;
 }
 
-.mentorship .owner_profile {
+.mentorship .owner_profile figure {
+  position: relative;
   aspect-ratio: 6/5.5;
   border-radius: 1.5rem;
   -webkit-transition: all 0.3s linear;
@@ -12582,7 +12598,7 @@ header .navbar .collapse {
   z-index: 2;
 }
 
-.mentorship .owner_profile:after {
+.mentorship .owner_profile figure:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -12597,7 +12613,7 @@ header .navbar .collapse {
   transition: all 0.3s linear;
 }
 
-.mentorship .owner_profile img {
+.mentorship .owner_profile figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -12609,14 +12625,24 @@ header .navbar .collapse {
   transition: all 0.3s linear;
 }
 
-.mentorship .owner_profile:hover {
+.mentorship .owner_profile figure:hover {
   -webkit-box-shadow: 0 0 0 transparent;
           box-shadow: 0 0 0 transparent;
 }
 
-.mentorship .owner_profile:hover img {
+.mentorship .owner_profile figure:hover img {
   -webkit-box-shadow: 0 0 0 transparent;
           box-shadow: 0 0 0 transparent;
+}
+
+.mentorship .owner_profile figure .sect_heading {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateY(6.5rem);
+          transform: translateY(6.5rem);
 }
 
 .mentorship .pod_slider {
@@ -12696,20 +12722,20 @@ header .navbar .collapse {
   left: 0;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: .5rem;
+  bottom: 0.5rem;
 }
 
 .mentorship .slider-wrap .image-item {
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
-  padding: .25rem;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  padding: 0.25rem;
   -webkit-box-shadow: 0.5rem 0.95rem 1px #000;
           box-shadow: 0.5rem 0.95rem 1px #000;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .mentorship .slider-wrap .image-item img {
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   -webkit-box-shadow: 0.25rem 0.25rem 1px #fff;
           box-shadow: 0.25rem 0.25rem 1px #fff;
 }
@@ -12717,13 +12743,13 @@ header .navbar .collapse {
 .mentorship .slider-wrap .image-item h2, .mentorship .slider-wrap .image-item .h2 {
   opacity: 0;
   width: 0;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
-  padding-left: .5rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  padding-left: 0.5rem;
 }
 
 .mentorship .slider-wrap .image-item:hover {
-  height: 250px;
+  height: 270px;
   -webkit-box-shadow: 0.5rem 0.5rem 1px #000;
           box-shadow: 0.5rem 0.5rem 1px #000;
   border: 1px solid #000;
@@ -12847,10 +12873,14 @@ header .navbar .collapse {
     padding-bottom: 5rem;
   }
   .mentorship .owner_profile {
-    margin-bottom: 10rem;
+    margin-bottom: 19.5rem;
   }
   .mentorship .pod_slider {
     bottom: 0;
+  }
+  .mentorship .mentorship_description {
+    margin-top: 5rem;
+    padding: 0;
   }
 }
 
