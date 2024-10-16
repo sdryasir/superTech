@@ -533,6 +533,17 @@ ul {
   background-color: lighten($color: $color_theme, $amount: 30%);
 }
 
+.d_xl-blockk{
+  display: none;
+}
+
+.d-lg-none{
+  display: block;
+}
+
+.d-md-none{
+  display: block;
+}
 @media (max-width: 1200px) {
 
   
@@ -547,9 +558,14 @@ ul {
   .d-lg-none{
     display: none;
   }
+
+  .d_xl-blockk{
+    display: block;
+  }
   
 }
 @media (max-width: 992px) {
+  
   .sm{
     max-width: 720px!important;
   }

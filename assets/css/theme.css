@@ -11216,6 +11216,18 @@ ul {
   background-color: #958ecf;
 }
 
+.d_xl-blockk {
+  display: none;
+}
+
+.d-lg-none {
+  display: block;
+}
+
+.d-md-none {
+  display: block;
+}
+
 @media (max-width: 1200px) {
   .sm {
     max-width: 960px !important;
@@ -11225,6 +11237,9 @@ ul {
   }
   .d-lg-none {
     display: none;
+  }
+  .d_xl-blockk {
+    display: block;
   }
 }
 
@@ -12589,7 +12604,7 @@ header .navbar .collapse {
 
 .mentorship .owner_profile figure {
   position: relative;
-  aspect-ratio: 6/5.5;
+  aspect-ratio: 6/6;
   border-radius: 1.5rem;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -12645,84 +12660,13 @@ header .navbar .collapse {
           transform: translateY(6.5rem);
 }
 
-.mentorship .pod_slider {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100vw;
-  bottom: 1.5rem;
-  overflow: visible;
-  top: calc(100% - 17rem);
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.mentorship .pod_slider .sliding-info-cards {
-  overflow: visible;
-}
-
-.mentorship .pod_slider .sliding-info-cards .info-cards {
-  height: 1rem;
-}
-
-.mentorship .pod_slider .sliding-info-cards .info-card {
-  border-radius: 0.5rem;
-  height: 8rem;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-  -webkit-transition: height 0.3s;
-  transition: height 0.3s;
-  padding: 0 !important;
-  -webkit-box-shadow: 0.25rem 0.25rem 1px #2a2a2a;
-          box-shadow: 0.25rem 0.25rem 1px #2a2a2a;
-  margin: 0.5rem;
-  border: 1px solid transparent;
-}
-
-.mentorship .pod_slider .sliding-info-cards .info-card figure {
-  width: calc(5rem + 3vw);
-  padding: 0.5rem;
-  position: relative;
-}
-
-.mentorship .pod_slider .sliding-info-cards .info-card figure img {
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 7rem;
-  border-radius: 0.5rem;
-  margin: 0 auto;
-}
-
-.mentorship .pod_slider .sliding-info-cards .info-card figure h4, .mentorship .pod_slider .sliding-info-cards .info-card figure .h4 {
-  position: absolute;
-  top: 100%;
-  left: 0.5rem;
-}
-
-.mentorship .pod_slider .sliding-info-cards .info-card h4, .mentorship .pod_slider .sliding-info-cards .info-card .h4 {
-  opacity: 0;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-
-.mentorship .pod_slider .sliding-info-cards .info-card:hover {
-  height: 12rem;
-  border-color: #2a2a2a;
-}
-
-.mentorship .pod_slider .sliding-info-cards .info-card:hover h4, .mentorship .pod_slider .sliding-info-cards .info-card:hover .h4 {
-  opacity: 1;
-}
-
 .mentorship .slider-wrap {
   position: absolute;
   bottom: 0;
   left: 0;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 0.5rem;
+  bottom: 2.5rem;
 }
 
 .mentorship .slider-wrap .image-item {
@@ -12872,20 +12816,20 @@ header .navbar .collapse {
   .mentorship {
     padding-bottom: 5rem;
   }
-  .mentorship .mentorship_col-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
   .mentorship .owner_profile {
     margin-bottom: 19.5rem;
   }
-  .mentorship .pod_slider {
-    bottom: 0;
-  }
   .mentorship .mentorship_description {
     padding: 0;
+  }
+  .mentorship .mentorship_description h5, .mentorship .mentorship_description .h5 {
+    display: none;
+  }
+  .mentorship .slider-wrap {
+    bottom: 1rem !important;
+  }
+  .mentorship .owner_profile figure {
+    aspect-ratio: 6/4.5 !important;
   }
 }
 
@@ -12909,10 +12853,6 @@ header .navbar .collapse {
   header .header_alert .header_close {
     background-color: transparent;
     border: 0;
-  }
-  .marquee-text {
-    white-space: normal;
-    overflow: hidden;
   }
   .marquee-text {
     white-space: nowrap;
@@ -12975,6 +12915,12 @@ header .navbar .collapse {
   }
   .comments_sect {
     display: none;
+  }
+  .mentorship_col-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
