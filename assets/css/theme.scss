@@ -1381,6 +1381,10 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 68%, rgba(255,255,255,0.0
 
   .mentorship {
     padding-bottom: 5rem;
+
+    .mentorship_col-wrapper{
+      flex-direction: column-reverse;
+    }
     .owner_profile {
       margin-bottom: 19.5rem;
     }
@@ -1389,7 +1393,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 68%, rgba(255,255,255,0.0
     }
 
     .mentorship_description{
-      margin-top: 5rem;
+      // margin-top: 5rem;
       padding: 0;
     }
   }

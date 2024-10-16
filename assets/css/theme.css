@@ -12872,6 +12872,12 @@ header .navbar .collapse {
   .mentorship {
     padding-bottom: 5rem;
   }
+  .mentorship .mentorship_col-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   .mentorship .owner_profile {
     margin-bottom: 19.5rem;
   }
@@ -12879,7 +12885,6 @@ header .navbar .collapse {
     bottom: 0;
   }
   .mentorship .mentorship_description {
-    margin-top: 5rem;
     padding: 0;
   }
 }
