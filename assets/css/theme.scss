@@ -4,6 +4,7 @@
 @import "../css/partials/base";
 @import "../css/partials/fonts";
 @import "../css/partials/footer";
+@import "../css/partials/learnMore";
 
 // media queries
 @import "../css/partials/mediaqueries";
@@ -396,6 +397,7 @@ header {
       position: relative;
 
       .info_articl-btn {
+        color: $color_white;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -403,6 +405,7 @@ header {
         text-decoration: none;
         // padding: .5rem;
         white-space: nowrap;
+        margin-bottom: 2rem;
 
         i {
           margin-left: 0.5rem;
@@ -501,7 +504,7 @@ header {
     .scroll-left,
     .scroll-right {
       display: none !important;
-      padding: 1.2rem 1.5rem;
+      padding: 1.5rem 1.5rem;
       cursor: pointer;
       border-radius: 0;
       justify-content: center;
@@ -510,7 +513,7 @@ header {
       z-index: 1;
       font-size: 0.75rem;
       color: $blue_dark;
-      top: -0.2rem;
+      top: .4rem;
       border: 0;
     }
   }
@@ -563,6 +566,8 @@ header {
       display: flex;
       align-items: center;
       position: relative;
+      overflow-x: hidden;
+      padding: 1rem 0;
     }
 
     .scrollable-tabs {
@@ -584,14 +589,15 @@ header {
 
     .scroll-left {
       position: absolute;
-      left: 0;
+      left: -1.25rem;
       background: rgb(255,255,255);
 background: linear-gradient(90deg, rgba(255,255,255,1) 68%, rgba(255,255,255,0.006039915966386533) 100%);
     }
 
     .scroll-right {
       position: absolute;
-      right: 0;
+      right: -1.25rem;
+      
       background: rgb(255, 255, 255);
       background: linear-gradient(
         270deg,
@@ -879,6 +885,13 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 68%, rgba(255,255,255,0.0
           }
         }
       }
+    }
+
+    .explore_courses{
+      display: block;
+      text-align: center;
+      padding: 1.25rem;
+      margin: 0 auto;
     }
   }
 }
@@ -1191,6 +1204,8 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 68%, rgba(255,255,255,0.0
   }
 }
 
+
+
 @media (max-width: 1200px) {
   //styling of hero section
   .hero_inner {
@@ -1265,6 +1280,9 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 68%, rgba(255,255,255,0.0
 
   //styling of services section
   .services {
+    .tab-content{
+      padding-bottom: 0!important;
+    }
     .row {
       .col_left {
         .tab_inner {
@@ -1272,7 +1290,26 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 68%, rgba(255,255,255,0.0
           background-color: transparent;
         }
       }
+
+      .col_right{
+        .profectionals_sect{
+          gap: 1rem;
+          .profectionals_card{
+            padding: 0;
+            flex: 1;
+            .btn_wrapper{
+              .theme_btn{
+                min-width: 8rem;
+                text-align: center;
+              }
+            }
+          }
+          
+        }
+      }
     }
+
+    
 
     .no_section {
       width: fit-content;
@@ -1403,13 +1440,20 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 68%, rgba(255,255,255,0.0
 
   .services {
     .no_section {
-      margin-bottom: 0;
+      margin-bottom: 2rem;
+      padding: 0;
+      width: 100%;
       &:after {
         right: 50%;
-        bottom: 4.5rem;
+        bottom: 2rem;
         transform: translate(50%, 50%);
         white-space: nowrap;
         background-color: transparent;
+      }
+
+      
+      li {
+        text-align: center;
       }
     }
 
@@ -1418,6 +1462,12 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 68%, rgba(255,255,255,0.0
         .tab_inner {
           flex-direction: column;
         }
+      }
+    }
+
+    .profectionals_card{
+      .btn_wrapper{
+        justify-content: center;
       }
     }
   }
@@ -1465,16 +1515,28 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 68%, rgba(255,255,255,0.0
   //styling of .services section
 
   .services {
-    .no_section {
-      margin-bottom: 0;
+    
+    .no_section{
+      ul{
+        width: 100%;
+      }
     }
 
+    .tab-controls{
+      position: relative;
+      height: 4rem;
+      overflow: hidden;
+    }
     .nav-tabs {
       width: 100%;
+
+
+      
 
       .nav-item {
         button {
           margin-bottom: 0 !important;
+          
         }
       }
     }
@@ -1483,6 +1545,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 68%, rgba(255,255,255,0.0
       .scroll-left,
       .scroll-right {
         display: flex !important;
+        top: -.5rem;
       }
     }
 
@@ -1516,6 +1579,11 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 68%, rgba(255,255,255,0.0
   //styling of services section
 
   .services {
+
+    .scrollable-tabs .nav-item:first-child {
+      scroll-margin-left: 10px; /* Add margin to ensure the first tab is properly spaced */
+    }
+
     .no_section {
       width: 100% !important;
 
@@ -1533,9 +1601,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 68%, rgba(255,255,255,0.0
         gap: 0;
       }
 
-      li {
-        text-align: center;
-      }
+      
     }
 
     .pod_slider {

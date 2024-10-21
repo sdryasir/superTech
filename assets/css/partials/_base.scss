@@ -117,6 +117,10 @@ body {
   // background-color: green;
 }
 
+
+.align_center{
+  align-items: center;
+}
 .theme_btn {
   display: inline-block;
   border: none;
@@ -129,6 +133,11 @@ body {
   text-transform: capitalize;
   white-space: nowrap;
   font-weight: bold;
+}
+
+.btn_custom{
+  display: inline-block;
+  text-decoration: none;
 }
 
 .primary-btn {
@@ -164,13 +173,17 @@ body {
   color: $color_white;
   transition: all 0.2s linear;
   &:hover {
-    color: $color_black;
+    color: $white;
     box-shadow: 0.5rem 0.5rem 1px $color_black;
   }
 }
 
 .btn_yellow {
   background-color: $yellow;
+}
+
+.btn_blue{
+  color: $blue_dark;
 }
 
 h1,

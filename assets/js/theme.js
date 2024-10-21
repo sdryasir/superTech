@@ -114,7 +114,7 @@ document.querySelectorAll('.marquee-content').forEach((marqueeContent) => {
 
 
 // AOS Initilization
-AOS.init();
+// AOS.init();
 
 let headerSect = document.querySelector("#headerSect");
 
@@ -228,14 +228,85 @@ const scrollTabs = (scrollAmount) => {
   }
 };
 
-// Scroll left when clicking the left button
-scrollLeftButton.addEventListener("click", () => {
-  scrollTabs(-100); // Adjust this value for scroll speed
-});
+// // Scroll left when clicking the left button
+// scrollLeftButton.addEventListener("click", () => {
+//   scrollTabs(-100); // Adjust this value for scroll speed
+// });
 
-// Scroll right when clicking the right button
-scrollRightButton.addEventListener("click", () => {
-  scrollTabs(100); // Adjust this value for scroll speed
+// // Scroll right when clicking the right button
+// scrollRightButton.addEventListener("click", () => {
+//   scrollTabs(100); // Adjust this value for scroll speed
+// });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const scrollLeftButton = document.querySelector('.scroll-left');
+  const scrollRightButton = document.querySelector('.scroll-right');
+  const scrollableTabs = document.querySelector('.scrollable-tabs');
+  
+  if (!scrollLeftButton || !scrollRightButton || !scrollableTabs) return; // Exit if elements are not found
+
+  // Function to scroll tabs by a specific amount
+  function scrollTabs(amount) {
+    scrollableTabs.scrollBy({
+      left: amount,
+      behavior: 'smooth' // Smooth scrolling
+    });
+  }
+
+  // Scroll left when clicking the left button
+  scrollLeftButton.addEventListener("click", () => {
+    scrollTabs(-scrollableTabs.clientWidth / 2); // Scroll left by half the visible area
+  });
+
+  // Scroll right when clicking the right button
+  scrollRightButton.addEventListener("click", () => {
+    scrollTabs(scrollableTabs.clientWidth / 2); // Scroll right by half the visible area
+  });
+
+  // Swipe functionality for mobile
+  let startX = 0; // Starting point of touch
+  let endX = 0; // Ending point of touch
+  const threshold = 50; // Minimum swipe distance
+
+  // Touch start event to get initial touch position
+  scrollableTabs.addEventListener('touchstart', (event) => {
+    startX = event.touches[0].clientX; // Capture where the touch started
+  });
+
+  // Touch move event to track finger movement
+  scrollableTabs.addEventListener('touchmove', (event) => {
+    endX = event.touches[0].clientX; // Update current touch position as finger moves
+  });
+
+  // Touch end event to determine if a swipe occurred
+  scrollableTabs.addEventListener('touchend', () => {
+    const deltaX = startX - endX; // Calculate how far the swipe moved
+
+    // Check if the swipe distance is more than the threshold
+    if (Math.abs(deltaX) > threshold) {
+      if (deltaX > 0) {
+        scrollTabs(scrollableTabs.clientWidth / 2); // Swipe left (scroll to the right)
+      } else {
+        scrollTabs(-scrollableTabs.clientWidth / 2); // Swipe right (scroll to the left)
+      }
+    }
+  });
+
+  // Scroll to the first tab on mobile view
+  function scrollToFirstTab() {
+    if (window.innerWidth <= 768) { // Only apply if the screen width is less than or equal to 768px
+      scrollableTabs.scrollTo({
+        left: 0, // Scroll to the beginning (first tab)
+        behavior: 'smooth'
+      });
+    }
+  }
+
+  // Run the scrollToFirstTab function on page load
+  scrollToFirstTab();
+
+  // Run the scrollToFirstTab function on window resize to handle resizing
+  window.addEventListener('resize', scrollToFirstTab);
 });
 
 
@@ -274,3 +345,26 @@ document.getElementById('exampleModal').addEventListener('hidden.bs.modal', func
   video.pause();
   video.currentTime = 0; // Optionally reset to start
 });
+
+
+
+
+
+// //auto play modal video
+// const modalVideoA = document.getElementById('modalVideoA');
+
+// // Play the video when the modal is shown
+// document.getElementById('heroDescVideo').addEventListener('shown.bs.modal', function () {
+//   video.play();
+// });
+
+// // Pause the video and reset time when the modal is hidden
+// document.getElementById('heroDescVideo').addEventListener('hidden.bs.modal', function () {
+//   video.pause();
+//   video.currentTime = 0; // Optionally reset to start
+// });
+
+
+
+
+

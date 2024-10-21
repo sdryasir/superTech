@@ -1,78 +1,80 @@
 
-@media (max-width: 992px) {
-    //styling of hero sect
+// @media (max-width: 992px) {
+//     //styling of hero sect
 
-    .d_md-n{
-      display: none;
-    }
+//     .d_md-n{
+//       display: none;
+//     }
   
-    .hero {
-      gap: 1rem;
-    }
+//     .hero {
+//       gap: 1rem;
+//     }
   
-    .hero_desc-sect,
-    .hero_img-sect {
-      width: 100%;
-    }
+//     .hero_desc-sect,
+//     .hero_img-sect {
+//       width: 100%;
+//     }
   
     
-  }
+//   }
   
-  @media (max-width: 786px) {
-    //styling of footer sect
-    .footer_list-sect {
-      aside {
-        padding-right: 0;
-        width: 100%;
-        ul {
-          width: 50%;
-        }
-      }
-      article {
-        width: 100%;
-        padding-left: 0;
-      }
-    }
-  }
+//   @media (max-width: 786px) {
+//     //styling of footer sect
+//     .footer_list-sect {
+//       aside {
+//         padding-right: 0;
+//         width: 100%;
+//         ul {
+//           width: 50%;
+//         }
+//       }
+//       article {
+//         width: 100%;
+//         padding-left: 0;
+//       }
+//     }
+//   }
   
-  @media (max-width: 576px) {
-    //styling of header sect
-    .navbar-nav {
-      width: 100%;
-      text-align: left;
+//   @media (max-width: 576px) {
+//     //styling of header sect
+//     .navbar-nav {
+//       width: 100%;
+//       text-align: left;
   
-      .nav-item{
-        width: 100%;
-      }
-      .nav-link {
-        padding: 1rem 0;
-        border-bottom: 1px solid lighten($color: $color-black, $amount: 50%);
+//       .nav-item{
+//         width: 100%;
+//       }
+//       .nav-link {
+//         padding: 1rem 0;
+//         border-bottom: 1px solid lighten($color: $color-black, $amount: 50%);
   
-        &.theme-btn {
-          width: fit-content;
-          margin-top: 1.5rem;
-        }
-      }
+//         &.theme-btn {
+//           width: fit-content;
+//           margin-top: 1.5rem;
+//         }
+//       }
   
       
-    }
+//     }
   
-    .nav_btn{
-      margin-top: calc(1rem + 1vw)!important;
-    }
+//     .nav_btn{
+//       margin-top: calc(1rem + 1vw)!important;
+//     }
   
-    //styling of footer setion
+//     //styling of footer setion
   
-    .footer_list-sect aside ul{
-      width: 100%;
-      margin: .75rem 0;
-    }
+//     .footer_list-sect aside ul{
+//       width: 100%;
+//       margin: .75rem 0;
+//     }
   
-    .copyright_wrapper {
-      gap: 1rem;
-    }
+//     .copyright_wrapper {
+//       gap: 1rem;
+//     }
   
-    .footer_list-sect article .theme-btn{
-      width: 100%;
-    }
-  }
+//     .footer_list-sect article .theme-btn{
+//       width: 100%;
+//     }
+//   }
+
+
