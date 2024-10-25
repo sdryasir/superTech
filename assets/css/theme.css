@@ -12669,6 +12669,9 @@ footer .footer_heading {
     font-size: 0.7em !important;
     font-weight: 500;
   }
+  .accordian_timeline ul {
+    font-size: 0.6em !important;
+  }
 }
 
 .inner_page-hero .slider_sect-wrapper {
@@ -13730,6 +13733,9 @@ footer .footer_heading {
   .our_programs .accordian_section .accordion-item:before {
     font-size: 0.7em !important;
     font-weight: 500;
+  }
+  .accordian_timeline ul {
+    font-size: 0.6em !important;
   }
 }
 
