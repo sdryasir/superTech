@@ -5,6 +5,7 @@
 @import "../css/partials/fonts";
 @import "../css/partials/footer";
 @import "../css/partials/learnMore";
+@import "../css/partials/learnMore";
 
 // media queries
 @import "../css/partials/mediaqueries";
@@ -742,7 +743,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 68%, rgba(255,255,255,0.0
       position: absolute;
       top: 2.5rem;
       left: 0;
-      transform: translateX(-50%);
+      transform: translateX(0%);
       width: fit-content;
       height: $item-heightA;
       // border: 1px solid blue;
@@ -751,30 +752,32 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 68%, rgba(255,255,255,0.0
         top: 0;
         left: 0;
       }
+      $width_4rem: 7rem;
 
       .slider-list {
         display: flex;
-        min-width: calc(#{$item-width} * #{$itemn-quantity});
+        min-width: calc(#{$width_4rem} * #{$itemn-quantity});
         position: relative;
       }
 
       .image-item {
         // background-color: green;
-        width: 8rem;
+        width: $width_4rem;
         height: 3rem;
         position: absolute;
         display: flex;
+        gap: 1rem;
         align-items: center;
         left: 100%;
-        animation: moveItems $animation-duration linear infinite;
+        // animation: moveItems $animation-duration linear infinite;
         animation-delay: calc(
           (#{$animation-duration} / #{$itemn-quantity}) *
             (var(--item-position) - 1)
         );
 
         img {
-          width: 100%;
-          height: auto;
+          width: auto;
+          height: 3rem;
           object-fit: cover;
         }
       }
@@ -1529,7 +1532,7 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 68%, rgba(255,255,255,0.0
     }
     .nav-tabs {
       width: 100%;
-
+      padding-left: 29rem;
 
       
 
