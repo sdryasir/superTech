@@ -61,7 +61,7 @@ body {
 // }
 
 .theme_font{
-  font-size: .5em;
+  font-size: .3em;
 }
 
 .slider-wrap{
@@ -610,6 +610,10 @@ ul {
 
     }
   }
+
+  .theme_font{
+    font-size: .65em!important;
+  }
   
 }
 
@@ -631,9 +635,9 @@ ul {
 }
 
 @media (max-width: 578px) {
-  .theme_font{
-    font-size: .6em!important;
-  }
+  // .theme_font{
+  //   font-size: .6em!important;
+  // }
   .footer_inner aside .footer_list {
     width: 100%;
   }

@@ -10828,7 +10828,7 @@ body {
 }
 
 .theme_font {
-  font-size: .5em;
+  font-size: .3em;
 }
 
 .slider-wrap {
@@ -11456,6 +11456,9 @@ ul {
   .sect_heading small, .sect_heading .small {
     margin-top: 1rem;
   }
+  .theme_font {
+    font-size: 0.65em !important;
+  }
 }
 
 @media (max-width: 786px) {
@@ -11471,9 +11474,6 @@ ul {
 }
 
 @media (max-width: 578px) {
-  .theme_font {
-    font-size: 0.6em !important;
-  }
   .footer_inner aside .footer_list {
     width: 100%;
   }
