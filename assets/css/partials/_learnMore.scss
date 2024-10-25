@@ -812,6 +812,17 @@ $item-heightA: 2rem;
       font-size: .45em!important;
     }
   }
+
+
+  //styling of accordian_timeline
+  .accordian_timeline{
+
+    ul{
+      font-size: .3em!important;     
+    }
+    
+  }
+
 }
 
 @media (max-width: 1200px) {
@@ -1032,6 +1043,8 @@ $item-heightA: 2rem;
     }
   }
 
+  
+
   //styling of program section
 
   .our_programs .accordian_section .accordion-item{
@@ -1040,6 +1053,15 @@ $item-heightA: 2rem;
       font-size: .6em!important;
       font-weight: 400;
     }
+  }
+
+  //styling of accordian_timeline
+  .accordian_timeline{
+
+    ul{
+      font-size: .5em!important;     
+    }
+    
   }
 }
 

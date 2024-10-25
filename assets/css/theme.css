@@ -12462,6 +12462,9 @@ footer .footer_heading {
             transform: translateY(-65%);
     font-size: 0.45em !important;
   }
+  .accordian_timeline ul {
+    font-size: 0.3em !important;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -12655,6 +12658,9 @@ footer .footer_heading {
             transform: translateY(-55%);
     font-size: 0.6em !important;
     font-weight: 400;
+  }
+  .accordian_timeline ul {
+    font-size: 0.5em !important;
   }
 }
 
@@ -13518,6 +13524,9 @@ footer .footer_heading {
             transform: translateY(-65%);
     font-size: 0.45em !important;
   }
+  .accordian_timeline ul {
+    font-size: 0.3em !important;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -13711,6 +13720,9 @@ footer .footer_heading {
             transform: translateY(-55%);
     font-size: 0.6em !important;
     font-weight: 400;
+  }
+  .accordian_timeline ul {
+    font-size: 0.5em !important;
   }
 }
 
