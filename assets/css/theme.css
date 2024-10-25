@@ -12398,21 +12398,21 @@ footer .footer_heading {
   left: .5rem;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
-  padding: .5rem 1rem;
-  background-color: #EA9448;
+  padding: .35rem .95rem;
+  background-color: #f0b47f;
   color: #000;
   border-top-left-radius: .5rem;
   border-top-right-radius: .5rem;
-  font-size: .4em;
+  font-size: .25em;
 }
 
 .accordian_section .accordian_content .accordian_timeline h2, .accordian_section .accordian_content .accordian_timeline .h2 {
-  font-size: .5em;
-  font-weight: 700;
+  font-size: .4em;
+  font-weight: 600;
 }
 
 .accordian_section .accordian_content .accordian_timeline ul {
-  font-size: .4em;
+  font-size: .3em;
   list-style: disc;
   padding-left: 1rem;
 }
@@ -12461,9 +12461,6 @@ footer .footer_heading {
     -webkit-transform: translateY(-65%);
             transform: translateY(-65%);
     font-size: 0.45em !important;
-  }
-  .accordian_timeline ul {
-    font-size: 0.3em !important;
   }
 }
 
@@ -13463,21 +13460,21 @@ footer .footer_heading {
   left: .5rem;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
-  padding: .5rem 1rem;
-  background-color: #EA9448;
+  padding: .35rem .95rem;
+  background-color: #f0b47f;
   color: #000;
   border-top-left-radius: .5rem;
   border-top-right-radius: .5rem;
-  font-size: .4em;
+  font-size: .25em;
 }
 
 .accordian_section .accordian_content .accordian_timeline h2, .accordian_section .accordian_content .accordian_timeline .h2 {
-  font-size: .5em;
-  font-weight: 700;
+  font-size: .4em;
+  font-weight: 600;
 }
 
 .accordian_section .accordian_content .accordian_timeline ul {
-  font-size: .4em;
+  font-size: .3em;
   list-style: disc;
   padding-left: 1rem;
 }
@@ -13526,9 +13523,6 @@ footer .footer_heading {
     -webkit-transform: translateY(-65%);
             transform: translateY(-65%);
     font-size: 0.45em !important;
-  }
-  .accordian_timeline ul {
-    font-size: 0.3em !important;
   }
 }
 

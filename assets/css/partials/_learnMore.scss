@@ -745,22 +745,22 @@ $item-heightA: 2rem;
         top: 0;
         left: .5rem;
         transform: translateY(-100%);
-        padding: .5rem 1rem;
-        background-color: $orange;
+        padding: .35rem .95rem;
+        background-color: lighten($orange, 12%);
         color: $black;
         border-top-left-radius: .5rem;
         border-top-right-radius: .5rem;
-        font-size: .4em;
+        font-size: .25em;
       }
 
       h2{
-        font-size: .5em;
-        font-weight: 700;
+        font-size: .4em;
+        font-weight: 600;
         
       }
 
       ul{
-        font-size: .4em;
+        font-size: .3em;
         list-style: disc;
         padding-left: 1rem;
         li{
@@ -814,14 +814,7 @@ $item-heightA: 2rem;
   }
 
 
-  //styling of accordian_timeline
-  .accordian_timeline{
-
-    ul{
-      font-size: .3em!important;     
-    }
-    
-  }
+  
 
 }
 
