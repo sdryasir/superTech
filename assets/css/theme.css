@@ -12639,6 +12639,17 @@ footer .footer_heading {
   .mentor_intro-inner .right_img {
     display: none;
   }
+  .programs_sect .slider-wrap {
+    height: 16rem !important;
+  }
+  .programs_sect .slider-wrap .image-item {
+    height: 13.5rem !important;
+  }
+  .programs_sect .slider-wrap .image-item h3, .programs_sect .slider-wrap .image-item .h3 {
+    margin-top: 1rem;
+    font-size: 0.55em !important;
+    font-weight: 500 !important;
+  }
   .our_programs .accordian_section .accordion-item:before {
     -webkit-transform: translateY(-55%);
             transform: translateY(-55%);
@@ -13683,6 +13694,17 @@ footer .footer_heading {
   .mentor_intro-inner .left_img,
   .mentor_intro-inner .right_img {
     display: none;
+  }
+  .programs_sect .slider-wrap {
+    height: 16rem !important;
+  }
+  .programs_sect .slider-wrap .image-item {
+    height: 13.5rem !important;
+  }
+  .programs_sect .slider-wrap .image-item h3, .programs_sect .slider-wrap .image-item .h3 {
+    margin-top: 1rem;
+    font-size: 0.55em !important;
+    font-weight: 500 !important;
   }
   .our_programs .accordian_section .accordion-item:before {
     -webkit-transform: translateY(-55%);

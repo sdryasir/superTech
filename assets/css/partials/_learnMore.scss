@@ -1016,6 +1016,22 @@ $item-heightA: 2rem;
     }
   }
 
+  //styling of programs_sect
+  .programs_sect {
+    .slider-wrap{
+      height: 16rem!important;
+
+      .image-item{
+        height: 13.5rem!important;
+        h3{
+          margin-top: 1rem;
+          font-size: .55em!important;
+          font-weight: 500!important;
+        }
+      }
+    }
+  }
+
   //styling of program section
 
   .our_programs .accordian_section .accordion-item{
@@ -1029,6 +1045,8 @@ $item-heightA: 2rem;
 
 @media(max-width: 567px){
   //styling of program section
+  
+  
 
   .our_programs .accordian_section .accordion-item{
     &:before{
