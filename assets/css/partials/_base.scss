@@ -572,6 +572,10 @@ ul {
 .d-md-none{
   display: block;
 }
+
+.d_lg-block{
+  display: none;
+}
 @media (max-width: 1200px) {
 
   
@@ -598,6 +602,13 @@ ul {
     max-width: 720px!important;
   }
 
+  .d_lg-block{
+    display: block;
+  }
+
+  .d_lg-none{
+    display: none;
+  }
   .text_lg-center{
     text-align: center;
   }

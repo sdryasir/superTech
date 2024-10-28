@@ -11428,6 +11428,10 @@ ul {
   display: block;
 }
 
+.d_lg-block {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .sm {
     max-width: 960px !important;
@@ -11446,6 +11450,12 @@ ul {
 @media (max-width: 992px) {
   .sm {
     max-width: 720px !important;
+  }
+  .d_lg-block {
+    display: block;
+  }
+  .d_lg-none {
+    display: none;
   }
   .text_lg-center {
     text-align: center;
@@ -12454,6 +12464,90 @@ footer .footer_heading {
 
 .accordian_section .accordian_content .accordian_pod .accordian_pod-desc {
   font-size: .4em;
+}
+
+.career_assistance {
+  font-size: calc(1rem + 2vw);
+}
+
+.career_assistance .careed_sect-slider {
+  position: relative;
+}
+
+.career_assistance .careed_sect-slider .mySwiper5 {
+  padding-bottom: 2em;
+  margin-bottom: 1rem;
+}
+
+.career_assistance .careed_sect-slider .mySwiper5 .swiper-pagination {
+  bottom: 0;
+}
+
+.career_assistance .careed_sect-slider .swiper_paginition-sect {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.career_assistance .row_top {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.career_assistance .row [class^="col-"] {
+  margin-bottom: 24px !important;
+}
+
+.career_assistance .career_card {
+  padding: 1em;
+  border-radius: 1rem;
+  background-color: #f4f6ff;
+  border: 1px solid #000;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.career_assistance .career_card:hover {
+  -webkit-box-shadow: 0.25rem 0.25rem 1px #000;
+          box-shadow: 0.25rem 0.25rem 1px #000;
+}
+
+.career_assistance .career_card picture {
+  display: block;
+  aspect-ratio: 4/2.5;
+  margin-bottom: 1.5rem;
+}
+
+.career_assistance .career_card picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.career_assistance .career_card figcaption {
+  text-align: center;
+}
+
+.career_assistance .career_card figcaption h2, .career_assistance .career_card figcaption .h2 {
+  text-transform: capitalize;
+  font-size: .35em;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.career_assistance .career_card figcaption p {
+  font-size: .3em;
+}
+
+.career_assistance .adviser_btn {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 @media (max-width: 1400px) {
@@ -13516,6 +13610,90 @@ footer .footer_heading {
 
 .accordian_section .accordian_content .accordian_pod .accordian_pod-desc {
   font-size: .4em;
+}
+
+.career_assistance {
+  font-size: calc(1rem + 2vw);
+}
+
+.career_assistance .careed_sect-slider {
+  position: relative;
+}
+
+.career_assistance .careed_sect-slider .mySwiper5 {
+  padding-bottom: 2em;
+  margin-bottom: 1rem;
+}
+
+.career_assistance .careed_sect-slider .mySwiper5 .swiper-pagination {
+  bottom: 0;
+}
+
+.career_assistance .careed_sect-slider .swiper_paginition-sect {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.career_assistance .row_top {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.career_assistance .row [class^="col-"] {
+  margin-bottom: 24px !important;
+}
+
+.career_assistance .career_card {
+  padding: 1em;
+  border-radius: 1rem;
+  background-color: #f4f6ff;
+  border: 1px solid #000;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.career_assistance .career_card:hover {
+  -webkit-box-shadow: 0.25rem 0.25rem 1px #000;
+          box-shadow: 0.25rem 0.25rem 1px #000;
+}
+
+.career_assistance .career_card picture {
+  display: block;
+  aspect-ratio: 4/2.5;
+  margin-bottom: 1.5rem;
+}
+
+.career_assistance .career_card picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.career_assistance .career_card figcaption {
+  text-align: center;
+}
+
+.career_assistance .career_card figcaption h2, .career_assistance .career_card figcaption .h2 {
+  text-transform: capitalize;
+  font-size: .35em;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.career_assistance .career_card figcaption p {
+  font-size: .3em;
+}
+
+.career_assistance .adviser_btn {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 @media (max-width: 1400px) {

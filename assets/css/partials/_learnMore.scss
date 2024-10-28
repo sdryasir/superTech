@@ -803,6 +803,86 @@ $item-heightA: 2rem;
   }
 }
 
+//styling of career_assistance
+.career_assistance{
+  font-size: calc(1rem + 2vw);
+
+  .careed_sect-slider{
+    position: relative;
+
+    .mySwiper5{
+      padding-bottom: 2em;
+      margin-bottom: 1rem;
+      .swiper-pagination{
+        bottom: 0;
+      }
+    }
+
+    .swiper_paginition-sect{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  .row_top{
+    justify-content: center;
+
+  }
+
+  .row {
+    [class^="col-"] {
+      margin-bottom: 24px!important;
+    }
+  }
+
+
+  .career_card{
+    padding: 1em;
+    border-radius: 1rem;
+    background-color: lighten($blue_dark, 65%);
+    border: 1px solid $black;
+    transition: all .2s linear;
+    &:hover{
+      
+      box-shadow: .25rem .25rem 1px $black;
+    }
+    picture{
+      display: block;
+      aspect-ratio: 4/2.5;
+      margin-bottom: 1.5rem;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    figcaption{
+      text-align: center;
+      h2{
+        text-transform: capitalize;
+        font-size: .35em;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      p{
+        font-size: .3em;
+        
+        // text-align: justify;
+
+      }
+    }
+  }
+
+  .adviser_btn{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 1400px){
 
   //styling of programes section
