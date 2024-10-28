@@ -811,16 +811,18 @@ $item-heightA: 2rem;
     text-align: center;
   }
 
+  .mySwiper5{
+    // padding-bottom: 2em;
+    margin-bottom: 1rem;
+    // .swiper-pagination{
+    //   bottom: 0;
+    // }
+  }
+
   .careed_sect-slider{
     position: relative;
 
-    .mySwiper5{
-      padding-bottom: 2em;
-      margin-bottom: 1rem;
-      .swiper-pagination{
-        bottom: 0;
-      }
-    }
+    
 
     .swiper_paginition-sect{
       position: absolute;
@@ -1089,6 +1091,14 @@ $item-heightA: 2rem;
    //styling of career_assistance
 
    .career_assistance{
+
+    .mySwiper5{
+      padding-bottom: 2em;
+      margin-bottom: 1rem;
+      .swiper-pagination{
+        bottom: 0;
+      }
+    }
     .career_card{
       figcaption{
         h2,p{
@@ -1097,6 +1107,8 @@ $item-heightA: 2rem;
       }
     }
   }
+
+  
 }
 
 
