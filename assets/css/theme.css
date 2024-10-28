@@ -12470,6 +12470,10 @@ footer .footer_heading {
   font-size: calc(1rem + 2vw);
 }
 
+.career_assistance .sect_heading {
+  text-align: center;
+}
+
 .career_assistance .careed_sect-slider {
   position: relative;
 }
@@ -12719,6 +12723,9 @@ footer .footer_heading {
   .accordian_pod .accordian_pod-desc {
     font-size: 0.5em !important;
   }
+  .career_assistance .career_card figcaption h2, .career_assistance .career_card figcaption .h2, .career_assistance .career_card figcaption p {
+    font-size: .5em;
+  }
 }
 
 @media (max-width: 786px) {
@@ -12753,6 +12760,9 @@ footer .footer_heading {
   .accordian_timeline ul {
     font-size: 0.5em !important;
   }
+  .career_assistance .career_card figcaption h2, .career_assistance .career_card figcaption .h2, .career_assistance .career_card figcaption p {
+    font-size: .6em;
+  }
 }
 
 @media (max-width: 567px) {
@@ -12762,6 +12772,9 @@ footer .footer_heading {
   }
   .accordian_timeline ul {
     font-size: 0.6em !important;
+  }
+  .career_assistance .career_card figcaption h2, .career_assistance .career_card figcaption .h2, .career_assistance .career_card figcaption p {
+    font-size: .7em;
   }
 }
 
@@ -13616,6 +13629,10 @@ footer .footer_heading {
   font-size: calc(1rem + 2vw);
 }
 
+.career_assistance .sect_heading {
+  text-align: center;
+}
+
 .career_assistance .careed_sect-slider {
   position: relative;
 }
@@ -13865,6 +13882,9 @@ footer .footer_heading {
   .accordian_pod .accordian_pod-desc {
     font-size: 0.5em !important;
   }
+  .career_assistance .career_card figcaption h2, .career_assistance .career_card figcaption .h2, .career_assistance .career_card figcaption p {
+    font-size: .5em;
+  }
 }
 
 @media (max-width: 786px) {
@@ -13899,6 +13919,9 @@ footer .footer_heading {
   .accordian_timeline ul {
     font-size: 0.5em !important;
   }
+  .career_assistance .career_card figcaption h2, .career_assistance .career_card figcaption .h2, .career_assistance .career_card figcaption p {
+    font-size: .6em;
+  }
 }
 
 @media (max-width: 567px) {
@@ -13908,6 +13931,9 @@ footer .footer_heading {
   }
   .accordian_timeline ul {
     font-size: 0.6em !important;
+  }
+  .career_assistance .career_card figcaption h2, .career_assistance .career_card figcaption .h2, .career_assistance .career_card figcaption p {
+    font-size: .7em;
   }
 }
 

@@ -807,6 +807,10 @@ $item-heightA: 2rem;
 .career_assistance{
   font-size: calc(1rem + 2vw);
 
+  .sect_heading{
+    text-align: center;
+  }
+
   .careed_sect-slider{
     position: relative;
 
@@ -1081,6 +1085,18 @@ $item-heightA: 2rem;
       font-size: .5em!important;
     }
   }
+
+   //styling of career_assistance
+
+   .career_assistance{
+    .career_card{
+      figcaption{
+        h2,p{
+          font-size: .5em;
+        }
+      }
+    }
+  }
 }
 
 
@@ -1136,6 +1152,18 @@ $item-heightA: 2rem;
     }
     
   }
+
+  //styling of career_assistance
+
+  .career_assistance{
+    .career_card{
+      figcaption{
+        h2,p{
+          font-size: .6em;
+        }
+      }
+    }
+  }
 }
 
 @media(max-width: 567px){
@@ -1159,4 +1187,18 @@ $item-heightA: 2rem;
     }
     
   }
+
+  
+  //styling of career_assistance
+
+  .career_assistance{
+    .career_card{
+      figcaption{
+        h2,p{
+          font-size: .7em;
+        }
+      }
+    }
+  }
+ 
 }
