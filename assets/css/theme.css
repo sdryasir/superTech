@@ -12554,6 +12554,14 @@ footer .footer_heading {
   margin: 0 auto;
 }
 
+.career_assistance .swiper-pagination-bullet-active {
+  background-color: #0220A5;
+  width: .75rem;
+  height: .75rem;
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+}
+
 .software_sect {
   font-size: calc(1rem + 2vw);
   background-color: #f4f6ff;
@@ -13781,6 +13789,14 @@ footer .footer_heading {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
+}
+
+.career_assistance .swiper-pagination-bullet-active {
+  background-color: #0220A5;
+  width: .75rem;
+  height: .75rem;
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
 }
 
 .software_sect {
