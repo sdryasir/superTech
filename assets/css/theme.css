@@ -12265,6 +12265,10 @@ footer .footer_heading {
           transform: translate(-50%, -50%);
 }
 
+.accordian_section {
+  background-color: #f4f6ff;
+}
+
 .accordian_section .accordion-item {
   margin-bottom: 4.5rem;
   position: relative !important;
@@ -12468,6 +12472,7 @@ footer .footer_heading {
 
 .career_assistance {
   font-size: calc(1rem + 2vw);
+  background-color: #f4f6ff;
 }
 
 .career_assistance .sect_heading {
@@ -12551,6 +12556,7 @@ footer .footer_heading {
 
 .software_sect {
   font-size: calc(1rem + 2vw);
+  background-color: #f4f6ff;
 }
 
 .software_sect .sect_heading {
@@ -12601,6 +12607,14 @@ footer .footer_heading {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.software_sect .swiper-pagination-bullet-active {
+  background-color: #0220A5;
+  width: .75rem;
+  height: .75rem;
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
 }
 
 @media (max-width: 1400px) {
@@ -13480,6 +13494,10 @@ footer .footer_heading {
           transform: translate(-50%, -50%);
 }
 
+.accordian_section {
+  background-color: #f4f6ff;
+}
+
 .accordian_section .accordion-item {
   margin-bottom: 4.5rem;
   position: relative !important;
@@ -13683,6 +13701,7 @@ footer .footer_heading {
 
 .career_assistance {
   font-size: calc(1rem + 2vw);
+  background-color: #f4f6ff;
 }
 
 .career_assistance .sect_heading {
@@ -13766,6 +13785,7 @@ footer .footer_heading {
 
 .software_sect {
   font-size: calc(1rem + 2vw);
+  background-color: #f4f6ff;
 }
 
 .software_sect .sect_heading {
@@ -13816,6 +13836,14 @@ footer .footer_heading {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.software_sect .swiper-pagination-bullet-active {
+  background-color: #0220A5;
+  width: .75rem;
+  height: .75rem;
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
 }
 
 @media (max-width: 1400px) {

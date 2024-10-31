@@ -587,6 +587,7 @@ $item-heightA: 2rem;
 }
 
 .accordian_section{
+  background-color: lighten($color: $blue_dark, $amount: 65%);
   .accordion-item{
     margin-bottom: 4.5rem;
     position: relative!important;
@@ -806,6 +807,7 @@ $item-heightA: 2rem;
 //styling of career_assistance
 .career_assistance{
   font-size: calc(1rem + 2vw);
+  background-color: lighten($color: $blue_dark, $amount: 65%);
 
   .sect_heading{
     text-align: center;
@@ -892,6 +894,7 @@ $item-heightA: 2rem;
 
 .software_sect{
   font-size: calc(1rem + 2vw);
+  background-color: lighten($color: $blue_dark, $amount: 65%);
   .sect_heading{
     text-align: center;
   }
@@ -918,12 +921,21 @@ $item-heightA: 2rem;
     &:hover{
       box-shadow: .25rem .25rem 1px $black;
     }
+
+    
   }
 
   .apply_now{
     display: block;
     margin: 0 auto;
     width: fit-content;
+  }
+
+  .swiper-pagination-bullet-active{
+    background-color: $blue_dark;
+    width: .75rem;
+    height: .75rem;
+    transform: translateY(15%);
   }
 
 }
