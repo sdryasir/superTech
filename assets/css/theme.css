@@ -12549,6 +12549,60 @@ footer .footer_heading {
   margin: 0 auto;
 }
 
+.software_sect {
+  font-size: calc(1rem + 2vw);
+}
+
+.software_sect .sect_heading {
+  text-align: center;
+}
+
+.software_sect .software_card-wrapper {
+  padding-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.software_sect .software_swiper-card {
+  border: 2px solid #000;
+  border-radius: 1rem;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  padding: .5rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.software_sect .software_swiper-card img {
+  width: 4em;
+}
+
+.software_sect .software_swiper-card:hover {
+  -webkit-box-shadow: 0.25rem 0.25rem 1px #000;
+          box-shadow: 0.25rem 0.25rem 1px #000;
+}
+
+.software_sect .apply_now {
+  display: block;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 @media (max-width: 1400px) {
   .accordian_section .accordion-item:before {
     -webkit-transform: translateY(-65%);
@@ -13708,6 +13762,60 @@ footer .footer_heading {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
+}
+
+.software_sect {
+  font-size: calc(1rem + 2vw);
+}
+
+.software_sect .sect_heading {
+  text-align: center;
+}
+
+.software_sect .software_card-wrapper {
+  padding-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.software_sect .software_swiper-card {
+  border: 2px solid #000;
+  border-radius: 1rem;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  padding: .5rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.software_sect .software_swiper-card img {
+  width: 4em;
+}
+
+.software_sect .software_swiper-card:hover {
+  -webkit-box-shadow: 0.25rem 0.25rem 1px #000;
+          box-shadow: 0.25rem 0.25rem 1px #000;
+}
+
+.software_sect .apply_now {
+  display: block;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 @media (max-width: 1400px) {

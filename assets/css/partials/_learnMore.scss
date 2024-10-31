@@ -812,11 +812,8 @@ $item-heightA: 2rem;
   }
 
   .mySwiper5{
-    // padding-bottom: 2em;
     margin-bottom: 1rem;
-    // .swiper-pagination{
-    //   bottom: 0;
-    // }
+    
   }
 
   .careed_sect-slider{
@@ -889,6 +886,47 @@ $item-heightA: 2rem;
   }
 }
 
+
+//styling of software_sect
+
+
+.software_sect{
+  font-size: calc(1rem + 2vw);
+  .sect_heading{
+    text-align: center;
+  }
+
+  .software_card-wrapper{
+    padding-bottom: 4rem;
+    display: flex;
+    gap: 1.3rem;
+    flex-direction: column;
+  }
+  .software_swiper-card{
+    border: 2px solid $black;
+    border-radius: 1rem;
+    transition: all .2s linear;
+    padding: .5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+      width: 4em;
+    }
+
+    &:hover{
+      box-shadow: .25rem .25rem 1px $black;
+    }
+  }
+
+  .apply_now{
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+}
 @media (max-width: 1400px){
 
   //styling of programes section
