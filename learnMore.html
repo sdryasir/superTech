@@ -1637,6 +1637,69 @@
         </section><!-- /.software_sect -->
 
 
+        <section class="certification_sect sec_space sec_bg position-relative">
+            <img class="sect_img position-absolute" src="./assets/images/certificate_bg.svg" alt="">
+            <div class="container sm">
+                <div class="certification_sect-inner">
+                    <div class="certification_top-wrapper">
+
+                        <figure class="certificate_img">
+                            <img loading="lazy" src="./assets/images/certificate.webp" alt="">
+                        </figure>
+
+                        <h2 class="sect_heading text-white">free master classes
+                            <small>Top Mentorship Programs in Tech, Marketing, & Data- Designed and Delivered by
+                                industry
+                                maestros.</small>
+                        </h2>
+
+                    </div><!-- /.certification_top-wrapper -->
+
+                    <div class="certification_bottom-wrapper">
+                        <div class="certification_swiper-sect">
+                            <div class="swiper mySwiper7">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <figure class="certificate_card">
+                                            <img src="./assets/images/certificate-icons.svg" alt="">
+
+                                            <figcaption>
+                                                <h2>Lorem, ipsum dolor.</h2>
+                                                <p class="theme_font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <figure class="certificate_card">
+                                            <img src="./assets/images/certificate-icons.svg" alt="">
+
+                                            <figcaption>
+                                                <h2>Lorem, ipsum dolor.</h2>
+                                                <p class="theme_font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <figure class="certificate_card">
+                                            <img src="./assets/images/certificate-icons.svg" alt="">
+
+                                            <figcaption>
+                                                <h2>Lorem, ipsum dolor.</h2>
+                                                <p class="theme_font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div><!-- /.certification_swiper-sect -->
+                    </div><!-- /.certification_bottom-wrapper -->
+                </div><!-- /.certification_sect-inner -->
+            </div><!-- /.conatiner -->
+        </section><!-- /.certification_sect -->
 
     </main>
 
@@ -1749,6 +1812,29 @@
                 1024: {
                     slidesPerView: 5,
                     spaceBetween: 20,
+                },
+            },
+        });
+
+        const swiper7 = new Swiper(".mySwiper7", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
                 },
             },
         });

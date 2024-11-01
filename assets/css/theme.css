@@ -12625,6 +12625,58 @@ footer .footer_heading {
           transform: translateY(15%);
 }
 
+.certification_sect {
+  font-size: calc(1rem + 2vw);
+}
+
+.certification_top-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.certification_top-wrapper .sect_heading {
+  margin-left: 24.5rem;
+}
+
+.certification_top-wrapper .certificate_img {
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  max-width: 20rem;
+  aspect-ratio: 4/5;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.certification_top-wrapper .certificate_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.certification_bottom-wrapper {
+  background-color: #6099fe;
+  padding: 2.5rem 2.5rem 4.5rem 2.5rem;
+  border-radius: 1.5rem;
+}
+
+.certification_bottom-wrapper .certification_swiper-sect {
+  margin-left: 22rem;
+  color: #fff;
+}
+
+.certification_bottom-wrapper .certification_swiper-sect .certificate_card img {
+  margin-bottom: 2rem;
+}
+
+.certification_bottom-wrapper .certification_swiper-sect .certificate_card h2, .certification_bottom-wrapper .certification_swiper-sect .certificate_card .h2 {
+  font-size: .5em;
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 1400px) {
   .accordian_section .accordion-item:before {
     -webkit-transform: translateY(-65%);
@@ -13860,6 +13912,58 @@ footer .footer_heading {
   height: .75rem;
   -webkit-transform: translateY(15%);
           transform: translateY(15%);
+}
+
+.certification_sect {
+  font-size: calc(1rem + 2vw);
+}
+
+.certification_top-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.certification_top-wrapper .sect_heading {
+  margin-left: 24.5rem;
+}
+
+.certification_top-wrapper .certificate_img {
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  max-width: 20rem;
+  aspect-ratio: 4/5;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.certification_top-wrapper .certificate_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.certification_bottom-wrapper {
+  background-color: #6099fe;
+  padding: 2.5rem 2.5rem 4.5rem 2.5rem;
+  border-radius: 1.5rem;
+}
+
+.certification_bottom-wrapper .certification_swiper-sect {
+  margin-left: 22rem;
+  color: #fff;
+}
+
+.certification_bottom-wrapper .certification_swiper-sect .certificate_card img {
+  margin-bottom: 2rem;
+}
+
+.certification_bottom-wrapper .certification_swiper-sect .certificate_card h2, .certification_bottom-wrapper .certification_swiper-sect .certificate_card .h2 {
+  font-size: .5em;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 1400px) {
