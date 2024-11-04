@@ -528,16 +528,16 @@ $item-heightA: 2rem;
   }
 
   .wrap_left{
-    padding: .5em;
-    padding-left: 1em;
+    padding: 1rem;
+    padding-left: 2.5rem;
     background-color: #FFF5E6;
     
     flex: 1;
     ul {
       .wrap_item {
-        font-size: .45em;
+        font-size: 1.25rem;
         width: 25%;
-        padding-left: 1.3em;
+        padding-left: 3rem;
         strong{
           font-weight: 600;
           span{
@@ -564,10 +564,10 @@ $item-heightA: 2rem;
     
     position: relative;
     display: flex;
-    font-size: .40em;
+    font-size: 1rem;
     line-height: 1.5;
     font-weight: bold;
-    padding: 1.2em 2em 1.2em 8em;
+    padding: 1.2rem 2rem 1.2rem 9rem;
     
     .placemwnt_img{
       position: absolute;
@@ -610,10 +610,10 @@ $item-heightA: 2rem;
       transform: translateY(-50%);
       font-size: .35em;
       text-transform: capitalize;
-      padding: .3em 1.5em;
+      padding: .5rem 1rem;
       border-radius: 1rem;
       background-color: $black;
-      height: 4rem;
+      height: calc(4.5rem + 1.25vw);
       // z-index: -1;
       border: 1rem;
       color: $white;
@@ -844,7 +844,7 @@ $item-heightA: 2rem;
 
 
   .career_card{
-    padding: 1em;
+    padding: 2rem;
     border-radius: 1rem;
     background-color: lighten($blue_dark, 65%);
     border: 1px solid $black;
@@ -873,7 +873,7 @@ $item-heightA: 2rem;
       }
 
       p{
-        font-size: .3em;
+        font-size: 1.25rem;
         
         // text-align: justify;
 
@@ -1218,7 +1218,7 @@ $item-heightA: 2rem;
     .career_card{
       figcaption{
         h2,p{
-          font-size: .5em;
+          font-size: calc(1rem + .4vw);
         }
       }
     }
@@ -1291,6 +1291,14 @@ $item-heightA: 2rem;
       }
     }
 
+    figcaption{
+      h2{
+        small{
+          margin-bottom: 0!important;
+        }
+      }
+    }
+
     .left_img,
     .right_img {
       display: none;
@@ -1340,7 +1348,7 @@ $item-heightA: 2rem;
     .career_card{
       figcaption{
         h2,p{
-          font-size: .6em;
+          font-size: calc(1rem + .3vw);
         }
       }
     }
@@ -1376,7 +1384,7 @@ $item-heightA: 2rem;
     .career_card{
       figcaption{
         h2,p{
-          font-size: .7em;
+          font-size: calc(1rem + .5vw);
         }
       }
     }

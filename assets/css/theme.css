@@ -12200,8 +12200,8 @@ footer .footer_heading {
 }
 
 .our_programs .wrap_left {
-  padding: .5em;
-  padding-left: 1em;
+  padding: 1rem;
+  padding-left: 2.5rem;
   background-color: #FFF5E6;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -12209,9 +12209,9 @@ footer .footer_heading {
 }
 
 .our_programs .wrap_left ul .wrap_item {
-  font-size: .45em;
+  font-size: 1.25rem;
   width: 25%;
-  padding-left: 1.3em;
+  padding-left: 3rem;
 }
 
 .our_programs .wrap_left ul .wrap_item strong {
@@ -12244,10 +12244,10 @@ footer .footer_heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: .40em;
+  font-size: 1rem;
   line-height: 1.5;
   font-weight: bold;
-  padding: 1.2em 2em 1.2em 8em;
+  padding: 1.2rem 2rem 1.2rem 9rem;
 }
 
 .our_programs .wrap_right .placemwnt_img {
@@ -12293,10 +12293,10 @@ footer .footer_heading {
           transform: translateY(-50%);
   font-size: .35em;
   text-transform: capitalize;
-  padding: .3em 1.5em;
+  padding: .5rem 1rem;
   border-radius: 1rem;
   background-color: #000;
-  height: 4rem;
+  height: calc(4.5rem + 1.25vw);
   border: 1rem;
   color: #fff;
 }
@@ -12505,7 +12505,7 @@ footer .footer_heading {
 }
 
 .career_assistance .career_card {
-  padding: 1em;
+  padding: 2rem;
   border-radius: 1rem;
   background-color: #f4f6ff;
   border: 1px solid #000;
@@ -12543,7 +12543,7 @@ footer .footer_heading {
 }
 
 .career_assistance .career_card figcaption p {
-  font-size: .3em;
+  font-size: 1.25rem;
 }
 
 .career_assistance .adviser_btn {
@@ -12857,7 +12857,7 @@ footer .footer_heading {
     bottom: 0;
   }
   .career_assistance .career_card figcaption h2, .career_assistance .career_card figcaption .h2, .career_assistance .career_card figcaption p {
-    font-size: .5em;
+    font-size: calc(1rem + .4vw);
   }
   .certification_top-wrapper {
     display: -webkit-box;
@@ -12916,6 +12916,9 @@ footer .footer_heading {
     -o-object-position: top;
        object-position: top;
   }
+  .mentor_intro-inner figcaption h2 small, .mentor_intro-inner figcaption .h2 small, .mentor_intro-inner figcaption h2 .small, .mentor_intro-inner figcaption .h2 .small {
+    margin-bottom: 0 !important;
+  }
   .mentor_intro-inner .left_img,
   .mentor_intro-inner .right_img {
     display: none;
@@ -12941,7 +12944,7 @@ footer .footer_heading {
     font-size: 0.5em !important;
   }
   .career_assistance .career_card figcaption h2, .career_assistance .career_card figcaption .h2, .career_assistance .career_card figcaption p {
-    font-size: .6em;
+    font-size: calc(1rem + .3vw);
   }
 }
 
@@ -12954,7 +12957,7 @@ footer .footer_heading {
     font-size: 0.6em !important;
   }
   .career_assistance .career_card figcaption h2, .career_assistance .career_card figcaption .h2, .career_assistance .career_card figcaption p {
-    font-size: .7em;
+    font-size: calc(1rem + .5vw);
   }
   .certification_bottom-wrapper .swiper-slide {
     text-align: center;
@@ -13542,8 +13545,8 @@ footer .footer_heading {
 }
 
 .our_programs .wrap_left {
-  padding: .5em;
-  padding-left: 1em;
+  padding: 1rem;
+  padding-left: 2.5rem;
   background-color: #FFF5E6;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -13551,9 +13554,9 @@ footer .footer_heading {
 }
 
 .our_programs .wrap_left ul .wrap_item {
-  font-size: .45em;
+  font-size: 1.25rem;
   width: 25%;
-  padding-left: 1.3em;
+  padding-left: 3rem;
 }
 
 .our_programs .wrap_left ul .wrap_item strong {
@@ -13586,10 +13589,10 @@ footer .footer_heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: .40em;
+  font-size: 1rem;
   line-height: 1.5;
   font-weight: bold;
-  padding: 1.2em 2em 1.2em 8em;
+  padding: 1.2rem 2rem 1.2rem 9rem;
 }
 
 .our_programs .wrap_right .placemwnt_img {
@@ -13635,10 +13638,10 @@ footer .footer_heading {
           transform: translateY(-50%);
   font-size: .35em;
   text-transform: capitalize;
-  padding: .3em 1.5em;
+  padding: .5rem 1rem;
   border-radius: 1rem;
   background-color: #000;
-  height: 4rem;
+  height: calc(4.5rem + 1.25vw);
   border: 1rem;
   color: #fff;
 }
@@ -13847,7 +13850,7 @@ footer .footer_heading {
 }
 
 .career_assistance .career_card {
-  padding: 1em;
+  padding: 2rem;
   border-radius: 1rem;
   background-color: #f4f6ff;
   border: 1px solid #000;
@@ -13885,7 +13888,7 @@ footer .footer_heading {
 }
 
 .career_assistance .career_card figcaption p {
-  font-size: .3em;
+  font-size: 1.25rem;
 }
 
 .career_assistance .adviser_btn {
@@ -14199,7 +14202,7 @@ footer .footer_heading {
     bottom: 0;
   }
   .career_assistance .career_card figcaption h2, .career_assistance .career_card figcaption .h2, .career_assistance .career_card figcaption p {
-    font-size: .5em;
+    font-size: calc(1rem + .4vw);
   }
   .certification_top-wrapper {
     display: -webkit-box;
@@ -14258,6 +14261,9 @@ footer .footer_heading {
     -o-object-position: top;
        object-position: top;
   }
+  .mentor_intro-inner figcaption h2 small, .mentor_intro-inner figcaption .h2 small, .mentor_intro-inner figcaption h2 .small, .mentor_intro-inner figcaption .h2 .small {
+    margin-bottom: 0 !important;
+  }
   .mentor_intro-inner .left_img,
   .mentor_intro-inner .right_img {
     display: none;
@@ -14283,7 +14289,7 @@ footer .footer_heading {
     font-size: 0.5em !important;
   }
   .career_assistance .career_card figcaption h2, .career_assistance .career_card figcaption .h2, .career_assistance .career_card figcaption p {
-    font-size: .6em;
+    font-size: calc(1rem + .3vw);
   }
 }
 
@@ -14296,7 +14302,7 @@ footer .footer_heading {
     font-size: 0.6em !important;
   }
   .career_assistance .career_card figcaption h2, .career_assistance .career_card figcaption .h2, .career_assistance .career_card figcaption p {
-    font-size: .7em;
+    font-size: calc(1rem + .5vw);
   }
   .certification_bottom-wrapper .swiper-slide {
     text-align: center;
