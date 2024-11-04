@@ -12706,6 +12706,9 @@ footer .footer_heading {
   .accordian_pod .row [class^="col-"] {
     margin-bottom: 1rem !important;
   }
+  .certificate_img {
+    max-width: 16rem !important;
+  }
 }
 
 @media (max-width: 992px) {
@@ -12856,6 +12859,53 @@ footer .footer_heading {
   .career_assistance .career_card figcaption h2, .career_assistance .career_card figcaption .h2, .career_assistance .career_card figcaption p {
     font-size: .5em;
   }
+  .certification_top-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .certification_top-wrapper .certificate_img {
+    position: static !important;
+    margin: 0 auto;
+  }
+  .certification_top-wrapper .sect_heading {
+    margin-left: 0;
+    text-align: center;
+  }
+  .certification_bottom-wrapper {
+    background-color: transparent;
+    position: relative;
+  }
+  .certification_bottom-wrapper .certification_swiper-sect {
+    margin-left: 0;
+  }
+  .certification_bottom-wrapper .certification_swiper-sect .mySwiper7 {
+    padding-bottom: 4rem;
+  }
+  .certification_bottom-wrapper .certification_swiper-sect .swiper-pagination {
+    bottom: 0;
+  }
+  .certification_bottom-wrapper .certification_swiper-sect .swiper-pagination .swiper-pagination-bullet {
+    background-color: #fff;
+    opacity: .7;
+  }
+  .certification_bottom-wrapper .certification_swiper-sect .swiper-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #fff;
+    width: .65rem;
+    height: .65rem;
+    -webkit-transform: translateY(0.1rem);
+            transform: translateY(0.1rem);
+  }
 }
 
 @media (max-width: 786px) {
@@ -12905,6 +12955,9 @@ footer .footer_heading {
   }
   .career_assistance .career_card figcaption h2, .career_assistance .career_card figcaption .h2, .career_assistance .career_card figcaption p {
     font-size: .7em;
+  }
+  .certification_bottom-wrapper .swiper-slide {
+    text-align: center;
   }
 }
 
@@ -13995,6 +14048,9 @@ footer .footer_heading {
   .accordian_pod .row [class^="col-"] {
     margin-bottom: 1rem !important;
   }
+  .certificate_img {
+    max-width: 16rem !important;
+  }
 }
 
 @media (max-width: 992px) {
@@ -14145,6 +14201,53 @@ footer .footer_heading {
   .career_assistance .career_card figcaption h2, .career_assistance .career_card figcaption .h2, .career_assistance .career_card figcaption p {
     font-size: .5em;
   }
+  .certification_top-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .certification_top-wrapper .certificate_img {
+    position: static !important;
+    margin: 0 auto;
+  }
+  .certification_top-wrapper .sect_heading {
+    margin-left: 0;
+    text-align: center;
+  }
+  .certification_bottom-wrapper {
+    background-color: transparent;
+    position: relative;
+  }
+  .certification_bottom-wrapper .certification_swiper-sect {
+    margin-left: 0;
+  }
+  .certification_bottom-wrapper .certification_swiper-sect .mySwiper7 {
+    padding-bottom: 4rem;
+  }
+  .certification_bottom-wrapper .certification_swiper-sect .swiper-pagination {
+    bottom: 0;
+  }
+  .certification_bottom-wrapper .certification_swiper-sect .swiper-pagination .swiper-pagination-bullet {
+    background-color: #fff;
+    opacity: .7;
+  }
+  .certification_bottom-wrapper .certification_swiper-sect .swiper-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #fff;
+    width: .65rem;
+    height: .65rem;
+    -webkit-transform: translateY(0.1rem);
+            transform: translateY(0.1rem);
+  }
 }
 
 @media (max-width: 786px) {
@@ -14194,6 +14297,9 @@ footer .footer_heading {
   }
   .career_assistance .career_card figcaption h2, .career_assistance .career_card figcaption .h2, .career_assistance .career_card figcaption p {
     font-size: .7em;
+  }
+  .certification_bottom-wrapper .swiper-slide {
+    text-align: center;
   }
 }
 

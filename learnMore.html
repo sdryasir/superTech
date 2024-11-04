@@ -1818,6 +1818,11 @@
 
         const swiper7 = new Swiper(".mySwiper7", {
             slidesPerView: 1,
+            loop: true,
+            autoplay: {
+                delay: 1500, // Adjust delay (in milliseconds) for autoplay
+                disableOnInteraction: false, // Keeps autoplay active after user interaction
+            },
             spaceBetween: 10,
             pagination: {
                 el: ".swiper-pagination",
@@ -1828,13 +1833,13 @@
                     slidesPerView: 2,
                     spaceBetween: 20,
                 },
+                // 992: {
+                //     slidesPerView: 3,
+                //     spaceBetween: 10,
+                // },
                 992: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
-                },
-                1024: {
                     slidesPerView: 3,
-                    spaceBetween: 30,
+                    spaceBetween: 10,
                 },
             },
         });
