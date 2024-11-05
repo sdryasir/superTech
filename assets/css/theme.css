@@ -10885,7 +10885,11 @@ body {
 }
 
 .modal.show .modal-content {
-  width: 50vw;
+  width: 35vw;
+}
+
+.modal.show .modal-content video {
+  aspect-ratio: 5/2.5;
 }
 
 .modal-dialog {
@@ -11486,6 +11490,12 @@ ul {
   .sect_heading small, .sect_heading .small {
     margin-top: 1rem;
   }
+  .modal.show .modal-content {
+    width: 45vw;
+  }
+  .modal.show .modal-content video {
+    aspect-ratio: 5/4.5 !important;
+  }
 }
 
 @media (max-width: 786px) {
@@ -11497,6 +11507,12 @@ ul {
   }
   .pod_card .heading_sm {
     font-size: 95% !important;
+  }
+  .modal.show .modal-content {
+    width: 55vw;
+  }
+  .modal.show .modal-content video {
+    aspect-ratio: 5/5.5 !important;
   }
 }
 

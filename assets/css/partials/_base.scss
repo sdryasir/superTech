@@ -113,7 +113,13 @@ body {
 
 
   .modal-content{
-    width: 50vw;
+    width: 35vw;
+    // max-height: 60vh;
+
+    video{
+      // height: 100%;
+      aspect-ratio: 5/2.5;
+    }
 
   }
 }
@@ -639,6 +645,20 @@ ul {
     }
   }
 
+
+  .modal.show{
+
+    .modal-content{
+      width: 45vw;
+
+  
+      video{
+        // height: 100%;
+        aspect-ratio: 5/4.5!important;
+      }
+  
+    }
+  }
   // .theme_font{
   //   // font-size: !important;
   // }
@@ -660,6 +680,20 @@ ul {
       font-size: 95%!important;
     }
   }
+
+  .modal.show{
+
+    .modal-content{
+      width: 55vw;
+
+  
+      video{
+        // height: 100%;
+        aspect-ratio: 5/5.5!important;
+      }
+  
+    }
+  }
 }
 
 @media (max-width: 578px) {
@@ -673,14 +707,11 @@ ul {
   //styling of .modal.show
 
   .modal.show{
-    .modal-body{
-      // aspect-ratio: 5/3.5;
-    }
+
   
     .modal-content{
       width: 100vw;
-      // max-width: 700px;
-      // width: clamp(250px, 700px, 900px);
+
     }
   }
   
