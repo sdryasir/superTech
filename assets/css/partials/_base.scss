@@ -61,7 +61,7 @@ body {
 // }
 
 .theme_font{
-  font-size: .3em;
+  font-size: calc(1rem + .2vw);
 }
 
 .slider-wrap{
@@ -103,6 +103,23 @@ body {
   &:hover .image-item{
     animation-play-state: paused;
   }
+}
+
+.modal.show{
+  display: flex!important;
+  justify-content: center;
+  align-items: center;
+
+
+
+  .modal-content{
+    width: 50vw;
+
+  }
+}
+
+.modal-dialog{
+  max-width: 100vw;
 }
 
 @keyframes moveItems {
@@ -622,9 +639,9 @@ ul {
     }
   }
 
-  .theme_font{
-    font-size: .65em!important;
-  }
+  // .theme_font{
+  //   // font-size: !important;
+  // }
   
 }
 
@@ -651,6 +668,20 @@ ul {
   // }
   .footer_inner aside .footer_list {
     width: 100%;
+  }
+
+  //styling of .modal.show
+
+  .modal.show{
+    .modal-body{
+      // aspect-ratio: 5/3.5;
+    }
+  
+    .modal-content{
+      width: 100vw;
+      // max-width: 700px;
+      // width: clamp(250px, 700px, 900px);
+    }
   }
   
 }
