@@ -19,7 +19,7 @@
 
 <body id="siteWrapper">
 
-    
+
 
     <main>
 
@@ -46,15 +46,39 @@
                                 </li>
                             </ul>
 
+                            <div class="counter">
+                                <div class="time-unit">
+                                    <span class="time" id="days">00</span>
+                                    <span class="label">Days</span>
+                                </div>
+                                <div class="separator">:</div>
+                                <div class="time-unit">
+                                    <span class="time" id="hours">00</span>
+                                    <span class="label">Hours</span>
+                                </div>
+                                <div class="separator">:</div>
+                                <div class="time-unit">
+                                    <span class="time" id="minutes">00</span>
+                                    <span class="label">Minutes</span>
+                                </div>
+                                <div class="separator">:</div>
+                                <div class="time-unit">
+                                    <span class="time" id="seconds">00</span>
+                                    <span class="label">Seconds</span>
+                                </div>
+                            </div>
+
                             <ul class="btn_list">
                                 <li>
                                     <a href="javascript(void:0)" class="theme_btn btn_blue-bg">Register for free!!</a>
                                 </li>
                                 <li>
-                                    <a href="javascript(void:0)" class="theme_btn"><i class="icon-people"></i> Certificate Included</a>
+                                    <a href="javascript(void:0)" class="theme_btn"><i class="icon-people"></i>
+                                        Certificate Included</a>
                                 </li>
                                 <li>
-                                    <a href="javascript(void:0)" class="theme_btn"><i class="icon-people"></i>2,845 already registered</a>
+                                    <a href="javascript(void:0)" class="theme_btn"><i class="icon-people"></i>2,845
+                                        already registered</a>
                                 </li>
                             </ul>
                         </div><!-- /.col-lg-->
@@ -84,13 +108,17 @@
             </div>
 
 
-            
+
 
         </section><!-- /.inner_page-hero -->
 
+
+
+
+
     </main>
 
-    
+
 
 
     <script src="assets/js/bootstrap.js"></script>
@@ -99,7 +127,31 @@
     <!-- <script src="assets/js/gsap.js"></script> -->
     <script src="assets/js/theme.js"></script>
 
-    
+    <script>
+        function countdown(targetDate) {
+            const target = new Date(targetDate).getTime();
+
+            setInterval(() => {
+                const now = new Date().getTime();
+                const distance = target - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("days").textContent = String(days).padStart(2, '0');
+                document.getElementById("hours").textContent = String(hours).padStart(2, '0');
+                document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
+                document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
+            }, 1000);
+        }
+
+        // Set the target date and time (e.g., "2024-12-31T23:59:59")
+        countdown("2024-12-31T23:59:59");
+    </script>
+
+
 </body>
 
 </html>
