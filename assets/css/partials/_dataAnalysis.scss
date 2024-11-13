@@ -76,6 +76,13 @@
     }
 }
 
+.hero_image-sect{
+    .heading_lable{
+        display: none;
+        
+    }
+}
+
 .hero_img-sect{
     border-radius: 1rem;
     position: relative;
@@ -107,6 +114,7 @@
         
 
     }
+    
 
     figcaption{
         background-color: $white;
@@ -129,6 +137,8 @@
         }
     }
 }
+
+
 
 
 @media(max-width: 1200px){

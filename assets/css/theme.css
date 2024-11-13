@@ -13107,6 +13107,10 @@ footer .footer_heading {
   color: #fff;
 }
 
+.hero_image-sect .heading_lable {
+  display: none;
+}
+
 .hero_img-sect {
   border-radius: 1rem;
   position: relative;
