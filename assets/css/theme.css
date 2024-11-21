@@ -10822,6 +10822,11 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   overflow: hidden;
   overflow-y: auto;
@@ -11469,10 +11474,6 @@ ul {
   .d_xl-blockk {
     display: block;
   }
-}
-
-.d_lg-none {
-  display: block;
 }
 
 @media (max-width: 992px) {
@@ -13211,6 +13212,183 @@ footer .footer_heading {
   height: 2rem;
 }
 
+.course_content .col_left {
+  padding-right: calc(4rem + 2vw);
+}
+
+.course_content .col_left .theme_font {
+  font-size: calc(0.65rem + 0.2vw);
+}
+
+.course_content .col_left .content_list .theme_font {
+  font-size: calc(0.7rem + 0.2vw);
+}
+
+.course_content .content_list p {
+  position: relative;
+  padding: 0.5rem 1rem 0.5rem 1.5rem;
+}
+
+.course_content .content_list p:before {
+  content: "\e90a";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-family: "icomoon";
+  font-size: 0.75rem;
+  color: #fc9c03;
+}
+
+.course_content .col_right figure {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  aspect-ratio: 5/4.5;
+  background-color: #dae1ff;
+}
+
+.course_content .col_right figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+
+.calender_marking .col_left,
+.calender_marking .col_right {
+  background-image: url("partials/verticle-lines-black.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fbeada;
+  background-blend-mode: multiply;
+  border-radius: 1.5rem;
+}
+
+.calender_marking .col_left {
+  padding-top: 2.5rem;
+}
+
+.calender_marking .col_left figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.calender_marking .col_left figure figcaption {
+  padding: 1rem;
+}
+
+.calender_marking .col_left figure figcaption .sect_heading {
+  margin-bottom: 1rem;
+}
+
+.calender_marking .col_left picture {
+  position: relative;
+  max-width: 18rem;
+  display: block;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.calender_marking .col_left picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.calender_marking .col_left picture .gradient_circle {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 4rem);
+          transform: translate(-50%, 4rem);
+  width: calc(100% + 10vw);
+  z-index: 1;
+}
+
+.calender_marking .col_left .fig_text {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.calender_marking .col_left .fig_text h2, .calender_marking .col_left .fig_text .h2 {
+  margin-bottom: .5rem;
+  padding: .5rem;
+  border-radius: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .35rem;
+  font-size: calc(.7rem + .2vw);
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+
+.calender_marking .col_left .fig_text h2 span, .calender_marking .col_left .fig_text .h2 span {
+  font-size: 90%;
+  font-weight: normal;
+}
+
+.calender_marking .col_left .fig_text h2 span img, .calender_marking .col_left .fig_text .h2 span img {
+  height: 1.75rem;
+}
+
+.calender_marking .col_left .fig_text p {
+  font-size: calc(.4rem + .2vw);
+  margin-bottom: 1rem;
+}
+
+.calender_marking .col_right {
+  background-color: #eaf4ec;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.calender_marking .col_right figcaption {
+  margin-top: 1rem;
+}
+
+.calender_marking .col_right figcaption h5, .calender_marking .col_right figcaption .h5 {
+  font-size: calc(1rem + .2vw);
+}
+
+.calender_marking .col_right figcaption img {
+  margin-bottom: 1rem;
+}
+
+.calender_marking .col_right picture {
+  display: block;
+  margin-top: 1.5rem;
+}
+
+.calender_marking .col_right picture img {
+  display: block;
+  width: 10rem;
+  margin: 0 auto;
+}
+
+.calender_marking .col_right a {
+  text-decoration: none;
+  font-size: calc(.8rem + .2vw);
+}
+
 @media (max-width: 1200px) {
   .masterclass_list {
     width: 100%;
@@ -13223,6 +13401,15 @@ footer .footer_heading {
   }
   .hero_img-sect picture {
     display: block !important;
+  }
+  .calender_marking .col-xl-3 {
+    padding: 0;
+  }
+  .calender_marking .col_right {
+    margin-top: .5rem;
+  }
+  .calender_marking .col_right picture {
+    display: none;
   }
 }
 
@@ -13302,6 +13489,31 @@ footer .footer_heading {
   }
   .btn_list li:last-child {
     margin-top: 0;
+  }
+  .course_content .col_left {
+    padding-right: 12px;
+  }
+  .course_content .col_left .theme_font {
+    font-size: calc(0.75rem + 0.3vw) !important;
+  }
+  .calender_marking .col_left {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .calender_marking .col_left figure {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .calender_marking .col_left figure .ps_r {
+    margin: 0 auto;
+  }
+  .calender_marking .col_left figure .fig_text h2, .calender_marking .col_left figure .fig_text .h2 {
+    margin-bottom: 0;
+  }
+  .calender_marking .col_left figure .fig_text p {
+    display: none;
   }
 }
 

@@ -40,6 +40,11 @@ body {
   font-family: $font-one;
 }
 
+figcaption{
+  margin: 0;
+  padding: 0;
+}
+
 //styling of slider section
 
 
@@ -620,9 +625,7 @@ ul {
   
 }
 
-.d_lg-none{
-  display: block;
-}
+
 @media (max-width: 992px) {
   
   .sm{

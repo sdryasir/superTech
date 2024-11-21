@@ -168,6 +168,190 @@
   }
 }
 
+//styling of course_content
+
+.course_content {
+  .col_left {
+    padding-right: calc(4rem + 2vw);
+    .theme_font {
+      font-size: calc(0.65rem + 0.2vw);
+    }
+
+    .content_list {
+      .theme_font {
+        font-size: calc(0.7rem + 0.2vw);
+      }
+    }
+  }
+
+  .content_list {
+    p {
+      position: relative;
+      padding: 0.5rem 1rem 0.5rem 1.5rem;
+      &:before {
+        content: "\e90a";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-family: "icomoon";
+        font-size: 0.75rem;
+        color: $yellow;
+      }
+    }
+  }
+
+  .col_right {
+    figure {
+      // margin-left: 3rem;
+
+      padding: 1.5rem;
+      border-radius: 1rem;
+      aspect-ratio: 5/4.5;
+      background-color: lighten($color: $blue_dark, $amount: 60%);
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+      }
+    }
+  }
+}
+//styling of calender_marking section
+.calender_marking {
+  // .col_left,
+  // .col_right {
+  //   position: relative;
+  //   z-index: 0;
+  //   .bg_img {
+  //     position: absolute;
+  //     width: 100%;
+  //     height: 100%;
+  //     top: 0;
+  //     left: 0;
+  //     object-fit: cover;
+  //   }
+  // }
+  .col_left,
+  .col_right {
+    background-image: url("partials/verticle-lines-black.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: lighten($color: $orange, $amount: 32%);
+    background-blend-mode: multiply;
+    border-radius: 1.5rem;
+  }
+
+  .col_left {
+    // overflow: hidden;
+    padding-top: 2.5rem;
+    figure {
+      display: flex;
+      align-items: flex-end;
+      
+
+      figcaption {
+        padding: 1rem;
+
+        .sect_heading {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    picture {
+      position: relative;
+      max-width: 18rem;
+      display: block;
+      aspect-ratio: 1/1;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        z-index: 2;
+      }
+      .gradient_circle {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 4rem);
+        width: calc(100% + 10vw);
+        z-index: 1;
+      }
+    }
+
+    .fig_text{
+      position: absolute;
+      bottom: 0;
+      z-index: 5;
+      width: 100%;
+      text-align: center;
+      color: $white;
+
+      h2{
+        margin-bottom: .5rem;
+        padding: .5rem;
+        border-radius: 8rem;
+        display: flex;
+        flex-direction: column;
+        gap: .35rem;
+        font-size: calc(.7rem + .2vw);
+        background-color: rgba($color: $white, $alpha: .2);
+        // box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+        
+        backdrop-filter: blur(8px);
+        span{
+          font-size: 90%;
+          font-weight: normal;
+          img{
+            height: 1.75rem;
+          }
+        }
+      }
+
+      p{
+        font-size: calc(.4rem + .2vw);
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .col_right {
+    background-color: lighten($color: $theme_green, $amount: 32%);
+    text-align: center;
+    padding: 1.5rem;
+    figcaption{
+      margin-top: 1rem;
+      h5{
+        font-size: calc(1rem + .2vw);
+      }
+      img{
+        margin-bottom: 1rem;
+
+      }
+    }
+
+    picture{
+      display: block;
+      margin-top: 1.5rem;
+      img{
+        display: block;
+        width: 10rem;
+        margin: 0 auto;
+
+      }
+    }
+
+    a{
+      text-decoration: none;
+      font-size: calc(.8rem + .2vw);
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   .masterclass_list {
     width: 100%;
@@ -184,6 +368,21 @@
   .hero_img-sect {
     picture {
       display: block !important;
+    }
+  }
+
+  //styling of calender_marking section
+
+  .calender_marking{
+    .col-xl-3{
+      
+      padding: 0;
+    }
+    .col_right{
+      margin-top: .5rem;
+      picture{
+        display: none;
+      }
     }
   }
 }
@@ -262,6 +461,43 @@
 
     li:last-child {
       margin-top: 0;
+    }
+  }
+
+  //styling of course_content section
+
+  .course_content {
+    .col_left {
+      padding-right: 12px;
+      .theme_font {
+        font-size: calc(0.75rem + 0.3vw) !important;
+      }
+    }
+  }
+
+  //styling of .course_content section
+
+  .calender_marking {
+    .col_left {
+      margin-bottom: 1rem;
+      text-align: center;
+      figure{
+        // display: flex;
+        flex-direction: column;
+
+        .ps_r{
+          margin: 0 auto;
+        }
+
+        .fig_text{
+          h2{
+            margin-bottom: 0;
+          }
+          p{
+            display: none;
+          }
+        }
+      }
     }
   }
 }
