@@ -249,6 +249,8 @@
     figure {
       display: flex;
       align-items: flex-end;
+      margin-top: auto;
+      height: 100%;
       
 
       figcaption {
@@ -262,7 +264,7 @@
 
     picture {
       position: relative;
-      max-width: 18rem;
+      max-width: 25rem;
       display: block;
       aspect-ratio: 1/1;
       overflow: hidden;
@@ -279,7 +281,7 @@
         bottom: 0;
         left: 50%;
         transform: translate(-50%, 4rem);
-        width: calc(100% + 10vw);
+        width: calc(100% + 7vw);
         z-index: 1;
       }
     }
@@ -339,7 +341,7 @@
       margin-top: 1.5rem;
       img{
         display: block;
-        width: 10rem;
+        width: 8rem;
         margin: 0 auto;
 
       }

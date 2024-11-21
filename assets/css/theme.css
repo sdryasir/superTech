@@ -13277,6 +13277,8 @@ footer .footer_heading {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin-top: auto;
+  height: 100%;
 }
 
 .calender_marking .col_left figure figcaption {
@@ -13289,7 +13291,7 @@ footer .footer_heading {
 
 .calender_marking .col_left picture {
   position: relative;
-  max-width: 18rem;
+  max-width: 25rem;
   display: block;
   aspect-ratio: 1/1;
   overflow: hidden;
@@ -13310,7 +13312,7 @@ footer .footer_heading {
   left: 50%;
   -webkit-transform: translate(-50%, 4rem);
           transform: translate(-50%, 4rem);
-  width: calc(100% + 10vw);
+  width: calc(100% + 7vw);
   z-index: 1;
 }
 
@@ -13380,7 +13382,7 @@ footer .footer_heading {
 
 .calender_marking .col_right picture img {
   display: block;
-  width: 10rem;
+  width: 8rem;
   margin: 0 auto;
 }
 
