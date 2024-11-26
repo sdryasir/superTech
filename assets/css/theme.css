@@ -13258,9 +13258,7 @@ footer .footer_heading {
 
 .calender_marking .col_left,
 .calender_marking .col_right {
-  background-image: url("partials/verticle-lines-black.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("partials/lines-vertical.png");
   background-color: #fbeada;
   background-blend-mode: multiply;
   border-radius: 1.5rem;
@@ -13391,6 +13389,106 @@ footer .footer_heading {
   font-size: calc(.8rem + .2vw);
 }
 
+.masterclass_info {
+  background-color: #f9faff;
+}
+
+.masterclass_info .masterclass_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+
+.masterclass_info .masterclass_text-cont {
+  position: absolute;
+  inset: 0;
+}
+
+.masterclass_info .masterclass_text-cont .text_cont-inner {
+  width: 100%;
+  top: 2rem;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 0;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.masterclass_info .masterclass_text-cont .text_cont-inner .sect_heading {
+  width: 50%;
+  font-size: calc(2.8rem + .2vw);
+  font-weight: 600;
+  padding-right: 3rem;
+}
+
+.masterclass_info .masterclass_text-cont .text_cont-inner .sect_heading small, .masterclass_info .masterclass_text-cont .text_cont-inner .sect_heading .small {
+  font-size: 34%;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.masterclass_info-list {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+  padding: calc(50vh - 13.15rem) 4rem calc(50vh - 13.15rem) 6rem;
+}
+
+.masterclass_info-list .masterclass_list-item {
+  position: -webkit-sticky;
+  position: sticky;
+  top: calc(50% - 8rem);
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0.5rem 0.5rem 1px #000;
+          box-shadow: 0.5rem 0.5rem 1px #000;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.masterclass_info-list .masterclass_list-item:hover {
+  -webkit-box-shadow: 0 0 0 transparent;
+          box-shadow: 0 0 0 transparent;
+}
+
+.masterclass_info-list .masterclass_list-item picture {
+  display: inline-block;
+  width: 50%;
+  aspect-ratio: 1/.8;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.masterclass_info-list .masterclass_list-item picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.masterclass_info-list .masterclass_list-item h4, .masterclass_info-list .masterclass_list-item .h4 {
+  font-size: calc(.8rem + .2vw);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 1200px) {
   .masterclass_list {
     width: 100%;
@@ -13516,6 +13614,48 @@ footer .footer_heading {
   }
   .calender_marking .col_left figure .fig_text p {
     display: none;
+  }
+  .masterclass_info .masterclass_inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .masterclass_info .masterclass_inner .masterclass_text-cont {
+    position: relative;
+    width: 100%;
+  }
+  .masterclass_info .masterclass_inner .masterclass_text-cont .text_cont-inner {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .masterclass_info .masterclass_inner .masterclass_text-cont .text_cont-inner .sect_heading {
+    max-width: 40rem;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  .masterclass_info-list {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    overflow-x: scroll;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    gap: 1.5rem;
+  }
+  .masterclass_info-list .masterclass_list-item {
+    position: relative;
+    min-width: 17rem;
+  }
+  .masterclass_info-list .masterclass_list-item picture {
+    width: 80%;
   }
 }
 
