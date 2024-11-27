@@ -425,19 +425,28 @@
   }   
 }
 // styling of upcoming_classes section
-
-.headingـsect{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  .sect_heading{
-    margin-bottom: 0;
+.upcoming_classes{
+  .headingـsect{
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .sect_heading{
+      margin-bottom: 0;
+    }
+    .theme_btn{
+      font-size: calc(.6rem + .2vw);
+      padding-right: 0;
+    }
   }
-  .theme_btn{
-    font-size: calc(.6rem + .2vw);
+
+  .row{
+    margin: 1.5rem 0;
   }
+
 }
+
 
 .masterclass_card{
 
@@ -707,6 +716,11 @@
   //styling of upcoming_classes section
 
   .upcoming_classes{
+
+    .headingـsect{
+      flex-direction: column;
+      text-align: center;
+    }
     .row{
       [class^="col-"] {
         padding: 12px;
